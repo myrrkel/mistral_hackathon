@@ -356,7 +356,7 @@ x_poids_net (char) : Poids net
     "option_value": "Trace"
   },
   "x_energie": "Energie pour 100g :\nSoit : 1.331,5 kJ\n313,5 Kcal",
-  "x_utilisation": "Dosage recommandé : 30 g à 100g par kg de votre préparation\nPour les denrées alimentaires appartenant à la catégorie 05.4 Décorations, enrobages et fourrages\ntels que définis par les directives de la Commission européenne - partie E de l'annexe II du\nrèglement (CE) n°1333/2008 sur les additifs alimentaires - version 5 – juin 2017. Contactez Puratos avant tout ajout direct d'additif alimentaire à la recette.\nApplication / recette : Traditionnellement utilisés en bavarois, mousses et glaces, les classics sont\nparfaits pour apporter saveur et couleur à toutes sortes de préparation comme les : crème\nanglaise, pâte à gâteau, ganache, crème au beurre, garniture pralinée, aussi en glaçage ou Miroir.",
+  "x_utilisation": "Dosage recommandé : 30 g à 100g par kg de votre préparation\nPour les denrées alimentaires appartenant à la catégorie 05.4 Décorations, enrobages et fourrages\ntels que définis par les directives de la Commission européenne - partie E de l'annexe II du\nrèglement (CE) n°1333/2008 sur les additifs alimentaires - version 5 – juin 2017. Contactez Puratos avant tout ajout direct d'additif alimentaire à la recette.\nApplication / recette : Traditionnellement utilisés en bavarois, mousses et glaces, les classics sont\nparfaits pour apporter saveur et couleur à toutes sortes de préparation comme les : crème anglaise, pâte à gâteau, ganache, crème au beurre, garniture pralinée, aussi en glaçage ou Miroir.",
   "x_compatible_au_regime_vegan": {
     "option_value": "Pas de donnée"
   },
@@ -366,7 +366,7 @@ x_poids_net (char) : Poids net
   "x_compatible_au_regime_vegetarien": {
     "option_value": "Pas de donnée"
   },
-  "x_caracteristiques_microbiologiques": "Flore totale : <5 000\nLevures : <500\nMoisissures : <300\nSalmonelles : abs /25g\nColiformes : <10\nE.coli : <10",
+  "x_caracteristiques_microbiologiques": "Flore totale <5 000\nLevures <500\nMoisissures <300\nSalmonelles : abs /25g\nColiformes <10\nE.coli <10",
   "x_caracteristiques_organoleptiques": "Couleur : jaune\nGoût : citron\nTexture : liquide épais visqueux.",
   "x_dont_acides_gras_satures": "1,3 g",
   "x_fibres": "1.2 g",
