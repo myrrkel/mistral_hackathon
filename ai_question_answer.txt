@@ -481,10 +481,10 @@ x_poids_net (char) : Poids net
   "default_code": false,
   "x_alimentarite_des_emballages": "",
   "x_arachides_et_produits_a_base_darachides": {
-    "option_value": "Absence"
+    "option_value": "Trace"
   },
   "x_celeri_et_produits_a_base_de_celeri": {
-    "option_value": "Absence"
+    "option_value": "Trace"
   },
   "x_conservation": "Store in cool constant ambient conditions",
   "x_cereales_contenant_du_gluten_et_produits_a_base_de_cereales": {
@@ -524,7 +524,7 @@ x_poids_net (char) : Poids net
   },
   "x_matieres_grasses": "26.5 g",
   "x_compatible_a_lalimentation_casher": {
-    "option_value": "Non"
+    "option_value": "Pas de donnée"
   },
   "x_conditionnement": "Foil",
   "x_dont_sucres": "40.4 g",
@@ -539,7 +539,7 @@ x_poids_net (char) : Poids net
   },
   "x_origine": "",
   "x_compatible_a_lalimentation_halal": {
-    "option_value": "Non"
+    "option_value": "Pas de donnée"
   },
   "x_soja_et_produits_a_base_de_soja": {
     "option_value": "Présence"
@@ -547,7 +547,7 @@ x_poids_net (char) : Poids net
   "x_energie": "2000 kJ / 478 kcal",
   "x_utilisation": "",
   "x_compatible_au_regime_vegan": {
-    "option_value": "Non"
+    "option_value": "Pas de donnée"
   },
   "x_poids_brut": "",
   "x_poids_net_egoutte": "",
