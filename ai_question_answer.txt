@@ -1,0 +1,564 @@
+{'messages': [
+{'role': 'user', 'content': # INSTRUCTIONS :
+
+You are an API that fills the json dictionary provided
+with values found in the document.
+Don't do assertions.
+If you don't find a value in the document, set the value at false.
+If there is no relevant information in the document return an empty dictionary.
+
+# JSON DICTIONARY :
+
+{
+  "name": "",
+  "description": "",
+  "description_purchase": "",
+  "description_sale": "",
+  "list_price": 0,
+  "volume": 0,
+  "weight": 0,
+  "default_code": "",
+  "x_alimentarite_des_emballages": "",
+  "x_arachides_et_produits_a_base_darachides": {
+    "option_value": ""
+  },
+  "x_celeri_et_produits_a_base_de_celeri": {
+    "option_value": ""
+  },
+  "x_conservation": "",
+  "x_cereales_contenant_du_gluten_et_produits_a_base_de_cereales": {
+    "option_value": ""
+  },
+  "x_fruits_a_coques_et_produits_a_base_de_ces_fruits": {
+    "option_value": ""
+  },
+  "x_certification": "",
+  "x_code_article": "",
+  "x_code_douanier": "",
+  "x_contaminants": "",
+  "x_crustaces_et_produits_a_base_de_crustaces": {
+    "option_value": ""
+  },
+  "x_garantie_sans_ionisation": "",
+  "x_garantie_sans_ogm": "",
+  "x_garantie_sans_nanotechnologie_et_nanomateriaux": "",
+  "x_graines_de_sesame_et_produits_a_base_de_graines_de_sesame": {
+    "option_value": ""
+  },
+  "x_lait_produits_laitiers_et_derives": {
+    "option_value": ""
+  },
+  "x_mollusques_et_produits_a_base_de_mollusques": {
+    "option_value": ""
+  },
+  "x_oeufs_et_produits_a_base_doeufs": {
+    "option_value": ""
+  },
+  "x_autres_regimes": "",
+  "x_poissons_et_produits_a_base_de_poissons": {
+    "option_value": ""
+  },
+  "x_sulfites": {
+    "option_value": ""
+  },
+  "x_matieres_grasses": "",
+  "x_compatible_a_lalimentation_casher": {
+    "option_value": ""
+  },
+  "x_conditionnement": "",
+  "x_dont_sucres": "",
+  "x_proteines": "",
+  "x_ingredients": "",
+  "x_lupin_et_produits_a_base_de_lupin": {
+    "option_value": ""
+  },
+  "x_caracteristiques_physicochimiques": "",
+  "x_moutarde_et_produits_a_base_de_moutarde": {
+    "option_value": ""
+  },
+  "x_origine": "",
+  "x_compatible_a_lalimentation_halal": {
+    "option_value": ""
+  },
+  "x_soja_et_produits_a_base_de_soja": {
+    "option_value": ""
+  },
+  "x_energie": "",
+  "x_utilisation": "",
+  "x_compatible_au_regime_vegan": {
+    "option_value": ""
+  },
+  "x_poids_brut": "",
+  "x_poids_net_egoutte": "",
+  "x_sel": "",
+  "x_compatible_au_regime_vegetarien": {
+    "option_value": ""
+  },
+  "x_caracteristiques_microbiologiques": "",
+  "x_caracteristiques_organoleptiques": "",
+  "x_dont_acides_gras_satures": "",
+  "x_fibres": "",
+  "x_glucides": "",
+  "x_poids_net": ""
+}
+
+# FIELDS DESCRIPTION :
+
+name (char) : Name
+description (html) : Description
+description_purchase (text) : Purchase Description
+description_sale (text) : Sales Description,A description of the Product that you want to communicate to your customers. This description will be copied to every Sales Order, Delivery Order and Customer Invoice/Credit Note
+list_price (float) : Sales Price,Price at which the product is sold to customers.
+volume (float) : Volume
+weight (float) : Weight
+default_code (char) : Internal Reference
+x_alimentarite_des_emballages (text) : Alimentarité des emballages
+x_arachides_et_produits_a_base_darachides (many2one) : Arachides et produits à base d’arachides
+    Available x_arachides_et_produits_a_base_darachides values : Absence, Présence, Trace
+x_celeri_et_produits_a_base_de_celeri (many2one) : Céleri et produits à base de céleri
+    Available x_celeri_et_produits_a_base_de_celeri values : Trace, Présence, Absence
+x_conservation (text) : Conservation
+x_cereales_contenant_du_gluten_et_produits_a_base_de_cereales (many2one) : Céréales contenant du gluten et produits à base de céréales
+    Available x_cereales_contenant_du_gluten_et_produits_a_base_de_cereales values : Trace, Présence, Absence
+x_fruits_a_coques_et_produits_a_base_de_ces_fruits (many2one) : Fruits à coques et produits à base de ces fruits
+    Available x_fruits_a_coques_et_produits_a_base_de_ces_fruits values : Absence, Présence, Trace
+x_certification (text) : Certification
+x_code_article (char) : Code article
+x_code_douanier (char) : Code douanier
+x_contaminants (text) : Contaminants
+x_crustaces_et_produits_a_base_de_crustaces (many2one) : Crustacés et produits à base de crustacés
+    Available x_crustaces_et_produits_a_base_de_crustaces values : Trace, Absence, Présence
+x_garantie_sans_ionisation (char) : Garantie sans ionisation
+x_garantie_sans_ogm (char) : Garantie sans OGM
+x_garantie_sans_nanotechnologie_et_nanomateriaux (char) : Garantie sans nanotechnologie et nanomatériaux
+x_graines_de_sesame_et_produits_a_base_de_graines_de_sesame (many2one) : Graines de sésame et produits à base de graines de sésame
+    Available x_graines_de_sesame_et_produits_a_base_de_graines_de_sesame values : Présence, Absence, Trace
+x_lait_produits_laitiers_et_derives (many2one) : Lait, produits laitiers et dérivés (y compris lactose et protéines de lait)
+    Available x_lait_produits_laitiers_et_derives values : Absence, Trace, Présence
+x_mollusques_et_produits_a_base_de_mollusques (many2one) : Mollusques et produits à base de mollusques
+    Available x_mollusques_et_produits_a_base_de_mollusques values : Absence, Présence, Trace
+x_oeufs_et_produits_a_base_doeufs (many2one) : Œufs et produits à base d’œufs
+    Available x_oeufs_et_produits_a_base_doeufs values : Trace, Présence, Absence
+x_autres_regimes (char) : Autres
+x_poissons_et_produits_a_base_de_poissons (many2one) : Poissons et produits à base de poissons
+    Available x_poissons_et_produits_a_base_de_poissons values : Présence, Trace, Absence
+x_sulfites (many2one) : Sulfites en concentrations de plus de 10 mg/kg ou 10 mg/l exprimées en SO2
+    Available x_sulfites values : Trace, Absence, Présence
+x_matieres_grasses (char) : Matières grasses
+x_compatible_a_lalimentation_casher (many2one) : Compatible à l’alimentation Casher
+    Available x_compatible_a_lalimentation_casher values : Oui, Non, Pas de donnée
+x_conditionnement (char) : Conditionnement
+x_dont_sucres (char) : Dont sucres
+x_proteines (char) : Protéines
+x_ingredients (text) : Ingrédients
+x_lupin_et_produits_a_base_de_lupin (many2one) : Lupin et produits à base de lupin
+    Available x_lupin_et_produits_a_base_de_lupin values : Absence, Trace, Présence
+x_caracteristiques_physicochimiques (text) : Caractéristiques physico-chimiques
+x_moutarde_et_produits_a_base_de_moutarde (many2one) : Moutarde et produits à base de moutarde
+    Available x_moutarde_et_produits_a_base_de_moutarde values : Absence, Trace, Présence
+x_origine (text) : Origine
+x_compatible_a_lalimentation_halal (many2one) : Compatible à l’alimentation Halal
+    Available x_compatible_a_lalimentation_halal values : Oui, Non, Pas de donnée
+x_soja_et_produits_a_base_de_soja (many2one) : Soja et produits à base de soja
+    Available x_soja_et_produits_a_base_de_soja values : Trace, Présence, Absence
+x_energie (char) : Energie
+x_utilisation (text) : Utilisation
+x_compatible_au_regime_vegan (many2one) : Compatible au régime vegan
+    Available x_compatible_au_regime_vegan values : Oui, Non, Pas de donnée
+x_poids_brut (char) : Poids brut
+x_poids_net_egoutte (char) : Poids net égoutté
+x_sel (char) : Sel
+x_compatible_au_regime_vegetarien (many2one) : Compatible au régime végétarien
+    Available x_compatible_au_regime_vegetarien values : Oui, Non, Pas de donnée
+x_caracteristiques_microbiologiques (text) : Caractéristiques microbiologiques
+x_caracteristiques_organoleptiques (text) : Caractéristiques organoleptiques
+x_dont_acides_gras_satures (char) : dont acides gras saturés
+x_fibres (char) : Fibres
+x_glucides (char) : Glucides
+x_poids_net (char) : Poids net
+ tax_rate (float) : tax rate in percent
+
+# DOCUMENT :
+
+<div id="page0">
+<p><b><span>Product Specification</span></b></p>
+<p><b><span>Cappuccino Biscuit Cake x 12</span></b></p>
+<p><b><span>Product Code: WCC0111</span></b></p>
+<p><b><span>Company Information</span></b></p>
+<p><span>Unit 16, Maple Park,</span></p>
+<p><span>Tel  01440 761079    FAX  01440 703859</span></p>
+<p><span>Falconer Rd.,</span></p>
+<p><span>Emergency Contact - Chris Bliss 07768 594109 (MD)</span></p>
+<p><span>Haverhill, Suffolk, CB9 7BG</span></p>
+<p><b><span>Product Information</span></b></p>
+<p><span>Description</span></p>
+<p><span>Coffee Flavour Biscuit Cake topped with White Chocolate Flavour Coating</span></p>
+<p><span>Appearance</span></p>
+<p><span>Smooth with speckles</span></p>
+<p><span>Colour</span></p>
+<p><span>Cream with a brown dusting</span></p>
+<p><span>Taste</span></p>
+<p><span>Sweet/coffee</span></p>
+<p><span>Smell</span></p>
+<p><span>Coffee</span></p>
+<p><span>Texture</span></p>
+<p><span>Soft with crumbly biscuit</span></p>
+<p><span>Size</span></p>
+<p><span>314 x 194 x 30 LWD cut into 15 Portions</span></p>
+<p><span>Average weight</span></p>
+<p><span>1.130kg (approx 75g per cake portion)</span></p>
+<p><b><span>Ingredient Declaration</span></b></p>
+<p><b><span>Other Label Information</span></b></p>
+<p><span>Allergy advice: For allergens see ingredients in </span><b><span>Bold</span></b><span> and Underlined. May contain traces of Nuts</span></p>
+<p><span>Suitable for Vegetarians.  </span></p>
+<p><span>Free from Hydrogenated Oil</span></p>
+<p><span>Store in cool constant ambient conditions</span></p>
+<p><b><span>Microbiological Information</span></b></p>
+<p><span>The values given are those expected immediately following production of the cakes under good </span></p>
+<p><span>manufacturing conditions</span></p>
+<p><span>Target</span></p>
+<p><span>Acceptable</span></p>
+<p><span>ERH</span></p>
+<p><span>72%</span></p>
+<p><span>76.50%</span></p>
+<p><span>TVC</span></p>
+<p><span>&lt;10,000</span></p>
+<p><span>&lt;100,000</span></p>
+<p><span>Enterobactriaceae @ 370C</span></p>
+<p><span>&lt;100</span></p>
+<p><span>&lt;1000</span></p>
+<p><span>Yeast &amp; Mould</span></p>
+<p><span>&lt;1000</span></p>
+<p><span>&lt;10,000</span></p>
+<p><span>Coag positive staphylococci</span></p>
+<p><span>&lt;20</span></p>
+<p><span>&lt;100</span></p>
+<p><span>Salmonella</span></p>
+<p><span>Not to be detected in 25g</span></p>
+<p><span>Not to be detected in 25g</span></p>
+<p><b><span>Packaging Information - Cake</span></b></p>
+<p><span>Tray Size</span></p>
+<p><span>314 x 194 x 30 LWD</span></p>
+<p><span>Foil</span></p>
+<p><span>105 microns +/- 8%</span></p>
+<p><span>Foil Weight grms</span></p>
+<p><span>25.8</span></p>
+<p><b><span>Tray Overwrapping</span></b></p>
+<p><span>Film</span></p>
+<p><span>Food grade polypropylene film</span></p>
+<p><span>Thickness</span></p>
+<p><span>25 microns</span></p>
+<p><span>Sealing method</span></p>
+<p><span>Heat sealed by flow wrapper</span></p>
+<p><span>DOCUMENT TITLE: Product Specification - Cappuccino Biscuit Cake x 12</span></p>
+<p><span>Version 4  </span></p>
+<p><span>Digestive Biscuits (38%) (Fortified Wheat Flour (</span><b><span>Wheat</span></b><span> Flour, Calcium Carbonate, Iron, Niacin, Thiamine), </span></p>
+<p><span>Vegetable Oil (Palm), Sugar, Wholemeal </span><b><span>Wheat</span></b><span> Flour, Raising Agents (Sodium Bicarbonate, Ammonium </span></p>
+<p><span>Bicarbonate, Tartaric Acid, Disodium Diphosphate, Malic Acid), Partially Inverted Sugar Syrup, Salt, Dried Whey </span></p>
+<p><span>(</span><b><span>Milk</span></b><span>), Dried Malt Extract),White Chocolate Flavour Coating (22%) (Sugar, Vegetable Fat (Palm), Whey Powder </span></p>
+<p><span>(</span><b><span>Milk</span></b><span>), Lactose (Milk), Emulsifier (</span><b><span>Soya</span></b><span> Lecithin)), Margarine (Vegetable Fat and Vegetable Oils (Palm, </span></p>
+<p><span>Rapeseed), Water, Salt, Colour (Natural Carotenes)), Sugar, Golden Syrup, Condensed Milk (</span><b><span>Milk</span></b><span>, Sugar), </span></p>
+<p><span>Natural Coffee Flavouring, Caramelised Sugar Syrup, Cocoa Powder.</span></p>
+
+</div>
+<div id="page0">
+<p><span>Doc Ref:   HPS102</span></p>
+<p><span>Issue Date: Jan 2015</span></p>
+<p><span>Page 1 of 3  </span></p>
+<p><b><span>Product Specification</span></b></p>
+<p><b><span>Cappuccino Biscuit Cake x 12</span></b></p>
+<p><b><span>Product Code: WCC0111</span></b></p>
+<p><b><span>Label</span></b></p>
+<p><span>Cream and Red label with black print, applied on the outside of the wrapping with Company </span></p>
+<p><span>name, logo, address, telephone number, product name, description, ingredients list, bar </span></p>
+<p><span>code, allergen information, storage instructions, best before date and batch number.</span></p>
+<p><span>Bar code type and number</span></p>
+<p><span>EAN-13      5034179000146</span></p>
+<p><b><span>Outer Packaging - Case</span></b></p>
+<p><span>Trays per case</span></p>
+<p><span>12</span></p>
+<p><span>Style</span></p>
+<p><span>One piece full overlap flaps</span></p>
+<p><span>Board Grade</span></p>
+<p><span>150TT</span></p>
+<p><span>Flute</span></p>
+<p><span>B</span></p>
+<p><span>Weight + Divider</span></p>
+<p><span>304g + 13g</span></p>
+<p><span>Packing</span></p>
+<p><span>Bubble wrap and Polystyrene chips</span></p>
+<p><span>Closure</span></p>
+<p><span>Taped</span></p>
+<p><span>Nominal  dimensions</span></p>
+<p><span>397 x 315 x 185mm LWD</span></p>
+<p><span>Outer label</span></p>
+<p><span>Cream and Orange with black print, showing company name, </span></p>
+<p><span>address and telephone together with name of product, number </span></p>
+<p><span>of units, case bar code, bach number and Best Before date</span></p>
+<p><span>Barcode type and number</span></p>
+<p><span>EAN - 13     5034179001143</span></p>
+<p><b><span>Pallet Configuration</span></b></p>
+<p><span>Box weight Kgs</span></p>
+<p><span>14.29</span></p>
+<p><span>Pallet weight (excluding pallet)</span></p>
+<p><span>773kg</span></p>
+<p><span>Boxes per layer</span></p>
+<p><span>9</span></p>
+<p><span>Layers</span></p>
+<p><span>6</span></p>
+<p><span>Cases per pallet</span></p>
+<p><span>54</span></p>
+<p><b><span>Storage</span></b></p>
+<p><span>Cases to be stored at ambient temperatures, off the floor and away from direct heat and light.  Cool</span></p>
+<p><span>dry conditions should be maintained. AVOID WIDE VARIATIONS IN TEMPERATURE</span></p>
+<p><b><span>Shelf Life</span></b></p>
+<p><span>The product has a shelf life of 17 weeks from the date of manufacture (see best before date on the </span></p>
+<p><span>pack) if product remains sealed and under the recommended storage conditions.  Maintain a strict </span></p>
+<p><span>rotation at all times.</span></p>
+<p><b><span>Packaging Waste Data</span></b></p>
+<p><span>Weights in </span></p>
+<p><span>grams</span></p>
+<p><span>Wrapping </span></p>
+<p><span>Film </span></p>
+<p><span>(Plastic)</span></p>
+<p><span>Bubble or </span></p>
+<p><span>Pallet Wrap </span></p>
+<p><span>(Plastic)</span></p>
+<p><span>Packing </span></p>
+<p><span>Chips </span></p>
+<p><span>(Plastic)</span></p>
+<p><span>Shrink </span></p>
+<p><span>Film </span></p>
+<p><span>(Plastic)</span></p>
+<p><span>Label(s) </span></p>
+<p><span>(Paper)</span></p>
+<p><span>Case or </span></p>
+<p><span>Pallet </span></p>
+<p><span>(Card-</span></p>
+<p><span>board)</span></p>
+<p><span>Aluminium</span></p>
+<p><span>Other (state </span></p>
+<p><span>type)</span></p>
+<p><span>Product </span></p>
+<p><span>(Primary)</span></p>
+<p><span>4.8</span></p>
+<p><span>0</span></p>
+<p><span>0</span></p>
+<p><span>0</span></p>
+<p><span>1.4</span></p>
+<p><span>0</span></p>
+<p><span>25.8</span></p>
+<p><span>0</span></p>
+<p><span>Outer </span></p>
+<p><span>(Secon-</span></p>
+<p><span>dary)</span></p>
+<p><span>0</span></p>
+<p><span>10</span></p>
+<p><span>16</span></p>
+<p><span>0</span></p>
+<p><span>1.4</span></p>
+<p><span>317</span></p>
+<p><span>0</span></p>
+<p><span>0</span></p>
+<p><span>Pallet </span></p>
+<p><span>(Transit)</span></p>
+<p><span>0</span></p>
+<p><span>340</span></p>
+<p><span>0</span></p>
+<p><span>0</span></p>
+<p><span>9</span></p>
+<p><span>500</span></p>
+<p><span>0</span></p>
+<p><span>0</span></p>
+<p><span>NOTE: No Steel or Glass is used by The Wicked Cake Co. Ltd for Packaging or Transport of goods.</span></p>
+
+</div>
+<div id="page0">
+<p><span>DOCUMENT TITLE: Product Specification - Cappuccino Biscuit Cake x 12</span></p>
+<p><span>Version 4  </span></p>
+<p><span>Doc Ref:   HPS102</span></p>
+<p><span>Issue Date: Jan 2015</span></p>
+<p><span>Page 2 of 3  </span></p>
+<p><b><span>Product Specification</span></b></p>
+<p><b><span>Cappuccino Biscuit Cake x 12</span></b></p>
+<p><b><span>Product Code: WCC0111</span></b></p>
+<p><b><span>Dietary Information</span></b></p>
+<p><b><span>Nutritional-Typical values</span></b></p>
+<p><b><span>100g</span></b></p>
+<p><b><span>Portion</span></b></p>
+<p><span>Energy (kJ):</span></p>
+<p><span>2000</span></p>
+<p><span>1500.0</span></p>
+<p><span>Energy (kcal):</span></p>
+<p><span>478</span></p>
+<p><span>358.5</span></p>
+<p><span>Fat (g):</span></p>
+<p><span>26.5</span></p>
+<p><span>19.9</span></p>
+<p><span>of which Saturates (g):</span></p>
+<p><span>15.1</span></p>
+<p><span>11.3</span></p>
+<p><span>Carbohydrate (g):</span></p>
+<p><span>59.9</span></p>
+<p><span>44.9</span></p>
+<p><span>of which Sugars (g):</span></p>
+<p><span>40.4</span></p>
+<p><span>30.3</span></p>
+<p><span>Protein (g):</span></p>
+<p><span>2.8</span></p>
+<p><span>2.1</span></p>
+<p><span>Salt (g):</span></p>
+<p><span>0.78</span></p>
+<p><span>0.6</span></p>
+<p><i><span>Values by calculation </span></i></p>
+<p><b><span>Suitability - the product is suitable for:</span></b></p>
+<p><span>Ovo-lacto Vegetarians</span></p>
+<p><span>YES</span></p>
+<p><span>Vegans</span></p>
+<p><span>NO</span></p>
+<p><span>Coeliacs</span></p>
+<p><span>NO</span></p>
+<p><span>Lactose Intolerants</span></p>
+<p><span>NO</span></p>
+<p><span>Diabetics</span></p>
+<p><span>NO</span></p>
+<p><span>Kosher</span></p>
+<p><span>NO</span></p>
+<p><span>Halal</span></p>
+<p><span>NO</span></p>
+<p><b><span>Allergens - the product is FREE from:</span></b></p>
+<p><span>Gluten</span></p>
+<p><span>NO</span></p>
+<p><span>Crustaceans</span></p>
+<p><span>YES</span></p>
+<p><span>Eggs</span></p>
+<p><span>YES</span></p>
+<p><span>Fish</span></p>
+<p><span>YES</span></p>
+<p><span>Peanuts</span></p>
+<p><span>YES</span></p>
+<p><span>Soya</span></p>
+<p><span>NO</span></p>
+<p><span>Milk</span></p>
+<p><span>NO</span></p>
+<p><span>Other Nuts</span></p>
+<p><span>YES</span></p>
+<p><span>Celery</span></p>
+<p><span>YES</span></p>
+<p><span>Mustard</span></p>
+<p><span>YES</span></p>
+<p><span>Sesame Seeds</span></p>
+<p><span>YES</span></p>
+<p><span>Sulphur Dioxide</span></p>
+<p><span>YES</span></p>
+<p><span>Lupin</span></p>
+<p><span>YES</span></p>
+<p><span>Molluscs</span></p>
+<p><span>YES</span></p>
+<p><b><span>Metal Detection</span></b></p>
+<p><span>Frequency: Beginning and end of each Batch packed</span></p>
+<p><span>Ferrous: 3 mm</span></p>
+<p><span>DOCUMENT TITLE: Product Specification - Cappuccino Biscuit Cake x 12</span></p>
+<p><span>Version 4</span></p>
+<p><b><span>NOTE -</span></b><span> Allergens used on site are Nuts, Eggs, Milk, Gluten (in Wheat Flour and Oats), Soya and Sulphur </span></p>
+<p><span>Dioxide. </span></p>
+
+</div>
+<div id="page0">
+<p><span>Doc Ref:   HPS102</span></p>
+<p><span>Issue Date: Jan 2015</span></p>
+<p><span>Page 3 of 3  </span></p>
+</div>
+},
+{'role': 'assistant', 'content': {
+  "name": "Cappuccino Biscuit Cake",
+  "description": "<p>Coffee Flavour Biscuit Cake topped with White Chocolate Flavour Coating</p>",
+  "description_purchase": "",
+  "description_sale": "",
+  "list_price": 0.0,
+  "volume": 0.0,
+  "weight": 0.0,
+  "default_code": false,
+  "x_alimentarite_des_emballages": "",
+  "x_arachides_et_produits_a_base_darachides": {
+    "option_value": "Absence"
+  },
+  "x_celeri_et_produits_a_base_de_celeri": {
+    "option_value": "Absence"
+  },
+  "x_conservation": "Store in cool constant ambient conditions",
+  "x_cereales_contenant_du_gluten_et_produits_a_base_de_cereales": {
+    "option_value": "Présence"
+  },
+  "x_fruits_a_coques_et_produits_a_base_de_ces_fruits": {
+    "option_value": "Absence"
+  },
+  "x_certification": "",
+  "x_code_article": "WCC0111",
+  "x_code_douanier": "",
+  "x_contaminants": "",
+  "x_crustaces_et_produits_a_base_de_crustaces": {
+    "option_value": "Absence"
+  },
+  "x_garantie_sans_ionisation": "",
+  "x_garantie_sans_ogm": "",
+  "x_garantie_sans_nanotechnologie_et_nanomateriaux": "",
+  "x_graines_de_sesame_et_produits_a_base_de_graines_de_sesame": {
+    "option_value": "Absence"
+  },
+  "x_lait_produits_laitiers_et_derives": {
+    "option_value": "Présence"
+  },
+  "x_mollusques_et_produits_a_base_de_mollusques": {
+    "option_value": "Absence"
+  },
+  "x_oeufs_et_produits_a_base_doeufs": {
+    "option_value": "Absence"
+  },
+  "x_autres_regimes": "",
+  "x_poissons_et_produits_a_base_de_poissons": {
+    "option_value": "Absence"
+  },
+  "x_sulfites": {
+    "option_value": "Absence"
+  },
+  "x_matieres_grasses": "26.5 g",
+  "x_compatible_a_lalimentation_casher": {
+    "option_value": "Non"
+  },
+  "x_conditionnement": "Foil",
+  "x_dont_sucres": "40.4 g",
+  "x_proteines": "2.8 g",
+  "x_ingredients": "Digestive Biscuits (38%) (Fortified Wheat Flour (Wheat Flour, Calcium Carbonate, Iron, Niacin, Thiamine), Vegetable Oil (Palm), Sugar, Wholemeal Wheat Flour, Raising Agents (Sodium Bicarbonate, Ammonium Bicarbonate, Tartaric Acid, Disodium Diphosphate, Malic Acid), Partially Inverted Sugar Syrup, Salt, Dried Whey (Milk), Dried Malt Extract),White Chocolate Flavour Coating (22%) (Sugar, Vegetable Fat (Palm), Whey Powder (Milk), Lactose (Milk), Emulsifier (Soya Lecithin)), Margarine (Vegetable Fat and Vegetable Oils (Palm, Rapeseed), Water, Salt, Colour (Natural Carotenes)), Sugar, Golden Syrup, Condensed Milk (Milk, Sugar), Natural Coffee Flavouring, Caramelised Sugar Syrup, Cocoa Powder.",
+  "x_lupin_et_produits_a_base_de_lupin": {
+    "option_value": "Absence"
+  },
+  "x_caracteristiques_physicochimiques": "",
+  "x_moutarde_et_produits_a_base_de_moutarde": {
+    "option_value": "Absence"
+  },
+  "x_origine": "",
+  "x_compatible_a_lalimentation_halal": {
+    "option_value": "Non"
+  },
+  "x_soja_et_produits_a_base_de_soja": {
+    "option_value": "Présence"
+  },
+  "x_energie": "2000 kJ / 478 kcal",
+  "x_utilisation": "",
+  "x_compatible_au_regime_vegan": {
+    "option_value": "Non"
+  },
+  "x_poids_brut": "",
+  "x_poids_net_egoutte": "",
+  "x_sel": "0.78 g",
+  "x_compatible_au_regime_vegetarien": {
+    "option_value": "Oui"
+  },
+  "x_caracteristiques_microbiologiques": "The values given are those expected immediately following production of the cakes under good manufacturing conditions\nTarget\tAcceptable\nERH\t72%\t76.50%\nTVC\t<10,000\t<100,000\nEnterobactriaceae @ 370C\t<100\t<1000\nYeast & Mould\t<1000\t<10,000\nCoag positive staphylococci\t<20\t<100\nSalmonella\tNot to be detected in 25g\tNot to be detected in 25g",
+  "x_caracteristiques_organoleptiques": "Appearance: Smooth with speckles\nColour: Cream with a brown dusting\nTaste: Sweet/coffee\nSmell: Coffee\nTexture: Soft with crumbly biscuit",
+  "x_dont_acides_gras_satures": "15.1 g",
+  "x_fibres": "",
+  "x_glucides": "59.9 g",
+  "x_poids_net": ""
+}}]}
