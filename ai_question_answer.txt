@@ -472,93 +472,93 @@ x_poids_net (char) : Poids net
 },
 {'role': 'assistant', 'content': {
   "name": "Cappuccino Biscuit Cake x 12",
-  "description": "Coffee Flavour Biscuit Cake topped with White Chocolate Flavour Coating",
+  "description": "<p>Coffee Flavour Biscuit Cake topped with White Chocolate Flavour Coating</p>",
   "description_purchase": "",
   "description_sale": "",
-  "list_price": 0,
-  "volume": 0,
-  "weight": 1.130,
-  "default_code": "WCC0111",
+  "list_price": 0.0,
+  "volume": 0.0,
+  "weight": 0.0,
+  "default_code": false,
   "x_alimentarite_des_emballages": "",
   "x_arachides_et_produits_a_base_darachides": {
-    "option_value": "Absence"
+    "option_value": "Trace"
   },
   "x_celeri_et_produits_a_base_de_celeri": {
-    "option_value": "Absence"
+    "option_value": "Trace"
   },
   "x_conservation": "Store in cool constant ambient conditions",
   "x_cereales_contenant_du_gluten_et_produits_a_base_de_cereales": {
-    "option_value": "Presence"
+    "option_value": "Trace"
   },
   "x_fruits_a_coques_et_produits_a_base_de_ces_fruits": {
     "option_value": "Absence"
   },
   "x_certification": "",
-  "x_code_article": "",
+  "x_code_article": "WCC0111",
   "x_code_douanier": "",
   "x_contaminants": "",
   "x_crustaces_et_produits_a_base_de_crustaces": {
-    "option_value": "Absence"
+    "option_value": "Trace"
   },
   "x_garantie_sans_ionisation": "",
   "x_garantie_sans_ogm": "",
   "x_garantie_sans_nanotechnologie_et_nanomateriaux": "",
   "x_graines_de_sesame_et_produits_a_base_de_graines_de_sesame": {
-    "option_value": "Absence"
+    "option_value": "Trace"
   },
   "x_lait_produits_laitiers_et_derives": {
-    "option_value": "Presence"
+    "option_value": "Absence"
   },
   "x_mollusques_et_produits_a_base_de_mollusques": {
-    "option_value": "Absence"
+    "option_value": "Trace"
   },
   "x_oeufs_et_produits_a_base_doeufs": {
-    "option_value": "Absence"
+    "option_value": "Trace"
   },
   "x_autres_regimes": "",
   "x_poissons_et_produits_a_base_de_poissons": {
-    "option_value": "Absence"
+    "option_value": "Trace"
   },
   "x_sulfites": {
-    "option_value": "Absence"
+    "option_value": "Trace"
   },
-  "x_matieres_grasses": "",
+  "x_matieres_grasses": "26.5 g",
   "x_compatible_a_lalimentation_casher": {
-    "option_value": "Non"
+    "option_value": "Pas de donnée"
   },
-  "x_conditionnement": "",
-  "x_dont_sucres": "",
-  "x_proteines": "",
+  "x_conditionnement": "Tray Size 314 x 194 x 30 LWD cut into 15 Portions",
+  "x_dont_sucres": "40.4 g",
+  "x_proteines": "2.8 g",
   "x_ingredients": "Digestive Biscuits (38%) (Fortified Wheat Flour (Wheat Flour, Calcium Carbonate, Iron, Niacin, Thiamine), Vegetable Oil (Palm), Sugar, Wholemeal Wheat Flour, Raising Agents (Sodium Bicarbonate, Ammonium Bicarbonate, Tartaric Acid, Disodium Diphosphate, Malic Acid), Partially Inverted Sugar Syrup, Salt, Dried Whey (Milk), Dried Malt Extract),White Chocolate Flavour Coating (22%) (Sugar, Vegetable Fat (Palm), Whey Powder (Milk), Lactose (Milk), Emulsifier (Soya Lecithin)), Margarine (Vegetable Fat and Vegetable Oils (Palm, Rapeseed), Water, Salt, Colour (Natural Carotenes)), Sugar, Golden Syrup, Condensed Milk (Milk, Sugar), Natural Coffee Flavouring, Caramelised Sugar Syrup, Cocoa Powder.",
   "x_lupin_et_produits_a_base_de_lupin": {
-    "option_value": "Absence"
+    "option_value": "Trace"
   },
   "x_caracteristiques_physicochimiques": "",
   "x_moutarde_et_produits_a_base_de_moutarde": {
-    "option_value": "Absence"
+    "option_value": "Trace"
   },
   "x_origine": "",
   "x_compatible_a_lalimentation_halal": {
-    "option_value": "Non"
+    "option_value": "Pas de donnée"
   },
   "x_soja_et_produits_a_base_de_soja": {
-    "option_value": "Presence"
+    "option_value": "Absence"
   },
-  "x_energie": "",
+  "x_energie": "2000 kJ / 478 kcal",
   "x_utilisation": "",
   "x_compatible_au_regime_vegan": {
-    "option_value": "Non"
+    "option_value": "Pas de donnée"
   },
   "x_poids_brut": "",
   "x_poids_net_egoutte": "",
-  "x_sel": "",
+  "x_sel": "0.78 g",
   "x_compatible_au_regime_vegetarien": {
-    "option_value": "Oui"
+    "option_value": "Pas de donnée"
   },
-  "x_caracteristiques_microbiologiques": "",
-  "x_caracteristiques_organoleptiques": "",
-  "x_dont_acides_gras_satures": "",
+  "x_caracteristiques_microbiologiques": "The values given are those expected immediately following production of the cakes under good manufacturing conditions\nTarget\tAcceptable\nERH\t72%\t76.50%\nTVC\t<10,000\t<100,000\nEnterobactriaceae @ 370C\t<100\t<1000\nYeast & Mould\t<1000\t<10,000\nCoag positive staphylococci\t<20\t<100\nSalmonella\tNot to be detected in 25g\tNot to be detected in 25g",
+  "x_caracteristiques_organoleptiques": "Appearance: Smooth with speckles\nColour: Cream with a brown dusting\nTaste: Sweet/coffee\nSmell: Coffee\nTexture: Soft with crumbly biscuit\nSize: 314 x 194 x 30 LWD cut into 15 Portions\nAverage weight: 1.130kg (approx 75g per cake portion)",
+  "x_dont_acides_gras_satures": "15.1 g",
   "x_fibres": "",
-  "x_glucides": "",
+  "x_glucides": "59.9 g",
   "x_poids_net": ""
 }}]}
