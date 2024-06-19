@@ -472,7 +472,7 @@ x_poids_net (char) : Poids net
 },
 {'role': 'assistant', 'content': {
   "name": "Cappuccino Biscuit Cake",
-  "description": "<p>Coffee Flavour Biscuit Cake topped with White Chocolate Flavour Coating</p>",
+  "description": "Coffee Flavour Biscuit Cake topped with White Chocolate Flavour Coating",
   "description_purchase": "",
   "description_sale": "",
   "list_price": 0.0,
