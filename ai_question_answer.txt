@@ -1,0 +1,375 @@
+{'messages': [
+{'role': 'user', 'content': # INSTRUCTIONS :
+
+You are an API that fills the json dictionary provided
+with values found in the document.
+Don't do assertions.
+If you don't find a value in the document, set the value at false.
+If there is no relevant information in the document return an empty dictionary.
+
+# JSON DICTIONARY :
+
+{
+  "name": "",
+  "description": "",
+  "description_purchase": "",
+  "description_sale": "",
+  "list_price": 0,
+  "volume": 0,
+  "weight": 0,
+  "default_code": "",
+  "x_alimentarite_des_emballages": "",
+  "x_arachides_et_produits_a_base_darachides": {
+    "option_value": ""
+  },
+  "x_celeri_et_produits_a_base_de_celeri": {
+    "option_value": ""
+  },
+  "x_conservation": "",
+  "x_cereales_contenant_du_gluten_et_produits_a_base_de_cereales": {
+    "option_value": ""
+  },
+  "x_fruits_a_coques_et_produits_a_base_de_ces_fruits": {
+    "option_value": ""
+  },
+  "x_certification": "",
+  "x_code_article": "",
+  "x_code_douanier": "",
+  "x_contaminants": "",
+  "x_crustaces_et_produits_a_base_de_crustaces": {
+    "option_value": ""
+  },
+  "x_garantie_sans_ionisation": "",
+  "x_garantie_sans_ogm": "",
+  "x_garantie_sans_nanotechnologie_et_nanomateriaux": "",
+  "x_graines_de_sesame_et_produits_a_base_de_graines_de_sesame": {
+    "option_value": ""
+  },
+  "x_lait_produits_laitiers_et_derives": {
+    "option_value": ""
+  },
+  "x_mollusques_et_produits_a_base_de_mollusques": {
+    "option_value": ""
+  },
+  "x_oeufs_et_produits_a_base_doeufs": {
+    "option_value": ""
+  },
+  "x_autres_regimes": "",
+  "x_poissons_et_produits_a_base_de_poissons": {
+    "option_value": ""
+  },
+  "x_sulfites": {
+    "option_value": ""
+  },
+  "x_matieres_grasses": "",
+  "x_compatible_a_lalimentation_casher": {
+    "option_value": ""
+  },
+  "x_conditionnement": "",
+  "x_dont_sucres": "",
+  "x_proteines": "",
+  "x_ingredients": "",
+  "x_lupin_et_produits_a_base_de_lupin": {
+    "option_value": ""
+  },
+  "x_caracteristiques_physicochimiques": "",
+  "x_moutarde_et_produits_a_base_de_moutarde": {
+    "option_value": ""
+  },
+  "x_origine": "",
+  "x_compatible_a_lalimentation_halal": {
+    "option_value": ""
+  },
+  "x_soja_et_produits_a_base_de_soja": {
+    "option_value": ""
+  },
+  "x_energie": "",
+  "x_utilisation": "",
+  "x_compatible_au_regime_vegan": {
+    "option_value": ""
+  },
+  "x_poids_brut": "",
+  "x_poids_net_egoutte": "",
+  "x_sel": "",
+  "x_compatible_au_regime_vegetarien": {
+    "option_value": ""
+  },
+  "x_caracteristiques_microbiologiques": "",
+  "x_caracteristiques_organoleptiques": "",
+  "x_dont_acides_gras_satures": "",
+  "x_fibres": "",
+  "x_glucides": "",
+  "x_poids_net": ""
+}
+
+# FIELDS DESCRIPTION :
+
+name (char) : Name
+description (html) : Description
+description_purchase (text) : Purchase Description
+description_sale (text) : Sales Description,A description of the Product that you want to communicate to your customers. This description will be copied to every Sales Order, Delivery Order and Customer Invoice/Credit Note
+list_price (float) : Sales Price,Price at which the product is sold to customers.
+volume (float) : Volume
+weight (float) : Weight
+default_code (char) : Internal Reference
+x_alimentarite_des_emballages (text) : Alimentarité des emballages
+x_arachides_et_produits_a_base_darachides (many2one) : Arachides et produits à base d’arachides
+    Available x_arachides_et_produits_a_base_darachides values : Absence, Présence, Trace
+x_celeri_et_produits_a_base_de_celeri (many2one) : Céleri et produits à base de céleri
+    Available x_celeri_et_produits_a_base_de_celeri values : Trace, Présence, Absence
+x_conservation (text) : Conservation
+x_cereales_contenant_du_gluten_et_produits_a_base_de_cereales (many2one) : Céréales contenant du gluten et produits à base de céréales
+    Available x_cereales_contenant_du_gluten_et_produits_a_base_de_cereales values : Trace, Présence, Absence
+x_fruits_a_coques_et_produits_a_base_de_ces_fruits (many2one) : Fruits à coques et produits à base de ces fruits
+    Available x_fruits_a_coques_et_produits_a_base_de_ces_fruits values : Absence, Présence, Trace
+x_certification (text) : Certification
+x_code_article (char) : Code article
+x_code_douanier (char) : Code douanier
+x_contaminants (text) : Contaminants
+x_crustaces_et_produits_a_base_de_crustaces (many2one) : Crustacés et produits à base de crustacés
+    Available x_crustaces_et_produits_a_base_de_crustaces values : Trace, Absence, Présence
+x_garantie_sans_ionisation (char) : Garantie sans ionisation
+x_garantie_sans_ogm (char) : Garantie sans OGM
+x_garantie_sans_nanotechnologie_et_nanomateriaux (char) : Garantie sans nanotechnologie et nanomatériaux
+x_graines_de_sesame_et_produits_a_base_de_graines_de_sesame (many2one) : Graines de sésame et produits à base de graines de sésame
+    Available x_graines_de_sesame_et_produits_a_base_de_graines_de_sesame values : Présence, Absence, Trace
+x_lait_produits_laitiers_et_derives (many2one) : Lait, produits laitiers et dérivés (y compris lactose et protéines de lait)
+    Available x_lait_produits_laitiers_et_derives values : Absence, Trace, Présence
+x_mollusques_et_produits_a_base_de_mollusques (many2one) : Mollusques et produits à base de mollusques
+    Available x_mollusques_et_produits_a_base_de_mollusques values : Absence, Présence, Trace
+x_oeufs_et_produits_a_base_doeufs (many2one) : Œufs et produits à base d’œufs
+    Available x_oeufs_et_produits_a_base_doeufs values : Trace, Présence, Absence
+x_autres_regimes (char) : Autres
+x_poissons_et_produits_a_base_de_poissons (many2one) : Poissons et produits à base de poissons
+    Available x_poissons_et_produits_a_base_de_poissons values : Présence, Trace, Absence
+x_sulfites (many2one) : Sulfites en concentrations de plus de 10 mg/kg ou 10 mg/l exprimées en SO2
+    Available x_sulfites values : Trace, Absence, Présence
+x_matieres_grasses (char) : Matières grasses
+x_compatible_a_lalimentation_casher (many2one) : Compatible à l’alimentation Casher
+    Available x_compatible_a_lalimentation_casher values : Oui, Non, Pas de donnée
+x_conditionnement (char) : Conditionnement
+x_dont_sucres (char) : Dont sucres
+x_proteines (char) : Protéines
+x_ingredients (text) : Ingrédients
+x_lupin_et_produits_a_base_de_lupin (many2one) : Lupin et produits à base de lupin
+    Available x_lupin_et_produits_a_base_de_lupin values : Absence, Trace, Présence
+x_caracteristiques_physicochimiques (text) : Caractéristiques physico-chimiques
+x_moutarde_et_produits_a_base_de_moutarde (many2one) : Moutarde et produits à base de moutarde
+    Available x_moutarde_et_produits_a_base_de_moutarde values : Absence, Trace, Présence
+x_origine (text) : Origine
+x_compatible_a_lalimentation_halal (many2one) : Compatible à l’alimentation Halal
+    Available x_compatible_a_lalimentation_halal values : Oui, Non, Pas de donnée
+x_soja_et_produits_a_base_de_soja (many2one) : Soja et produits à base de soja
+    Available x_soja_et_produits_a_base_de_soja values : Trace, Présence, Absence
+x_energie (char) : Energie
+x_utilisation (text) : Utilisation
+x_compatible_au_regime_vegan (many2one) : Compatible au régime vegan
+    Available x_compatible_au_regime_vegan values : Oui, Non, Pas de donnée
+x_poids_brut (char) : Poids brut
+x_poids_net_egoutte (char) : Poids net égoutté
+x_sel (char) : Sel
+x_compatible_au_regime_vegetarien (many2one) : Compatible au régime végétarien
+    Available x_compatible_au_regime_vegetarien values : Oui, Non, Pas de donnée
+x_caracteristiques_microbiologiques (text) : Caractéristiques microbiologiques
+x_caracteristiques_organoleptiques (text) : Caractéristiques organoleptiques
+x_dont_acides_gras_satures (char) : dont acides gras saturés
+x_fibres (char) : Fibres
+x_glucides (char) : Glucides
+x_poids_net (char) : Poids net
+ tax_rate (float) : tax rate in percent
+
+# DOCUMENT :
+
+<div id="page0">
+<p><span> </span></p>
+<p><span>S</span><span>IEGE SOCIAL</span><span>/</span><span> </span><span>H</span><span>EAD OFFICE</span><span> :</span><span> </span><span>P</span><span>ARC D</span><span>’</span><span>AFFAIRES </span><span>S</span><span>ILIC </span><span>–</span><span> </span><span>40</span><span> RUE DE  </span><span>M</span><span>ONTLHERY</span><span>-</span><span> </span><span>BP</span><span> </span><span>80179</span><span> </span><span>–</span><span> </span><span>F</span><span> </span><span>94563</span><span> </span><span>R</span><span>UNGIS </span><span>C</span><span>EDEX</span><span> </span></p>
+<p><span>T</span><span>EL</span><span> :</span><span> </span><span>+33</span><span> </span><span>(0)1</span><span> </span><span>45</span><span> </span><span>60</span><span> </span><span>83</span><span> </span><span>83</span><span> </span><span>–</span><span> </span><span>F</span><span>AX</span><span> :</span><span> </span><span>+33</span><span> </span><span>(0)1</span><span> </span><span>45</span><span> </span><span>60</span><span> </span><span>40</span><span> </span><span>30 </span></p>
+
+<p><b><span>FICHE TECHNIQUE</span></b><b><i><span> </span></i></b></p>
+<p><b><i><span>CLASSIC CITRON </span></i></b></p>
+<p><b><i><span>Code SAP: 4017059 </span></i></b></p>
+<p><b><i><span>GENCOD: 5410687140091 Unité </span></i></b></p>
+<p><i><span>GENCOD: 5410687140107 carton</span></i><span> </span></p>
+<p><span>Crée-le : 26/02/2021 </span></p>
+<p><span>Indice B du : 31/03/2021  </span></p>
+<p><span>Visa : ON </span></p>
+<p><b><i><span>Libellé Informatique </span></i></b><span>Classic Citron (Lemon) Carton 5X1Kg EU </span></p>
+<p><b><i><span>Définition du produit </span></i></b></p>
+<p><span>Préparation de fruits.  </span></p>
+<p><span>Préparé avec 98 g de citron pour 100 g. </span></p>
+<p><span>Préparé sans colorants ni arômes artificiels. </span></p>
+<p><b><i><span>Utilisation </span></i></b></p>
+<p><span>Dosage recommandé : 30 g à 100g par kg de votre préparation </span></p>
+<p><i><span>Pour les denrées alimentaires appartenant à la catégorie 05.4 Décorations, enrobages et fourrages </span></i></p>
+<p><i><span>tels que définis par les directives de la Commission européenne - partie E de l'annexe II du </span></i></p>
+<p><i><span>règlement (CE) n°1333/2008 sur les additifs alimentaires - version 5 </span></i><i><span>–</span></i><i><span> juin 2017. </span></i></p>
+<p><span>Contactez Puratos avant tout ajout direct d'additif alimentaire à la recette. </span></p>
+<p><span>Application / recette : Traditionnellement utilisés en bavarois, mousses et glaces, les classics sont </span></p>
+<p><span>parfaits pour apporter saveur et couleur à toutes sortes de préparation comme les : crème </span></p>
+<p><span>anglaise, pâte à gâteau, ganache, crème au beurre, garniture pralinée, aussi en glaçage ou Miroir. </span></p>
+<p><b><i><span>Dénomination légale </span></i></b><span>Préparation de fruits </span></p>
+<p><b><i><span>Origine </span></i></b></p>
+<p><span>Belgique</span><sup><span>1 </span></sup></p>
+<p><b><i><span>Date de durabilité minimale </span></i></b></p>
+<p><b><span>12 mois </span></b></p>
+<p><b><i><span>Ingrédients </span></i></b></p>
+<p><span>Sirop de glucose, sucre, concentré de citron, eau, arôme naturel de citron, fibre d</span><span>’</span><span>agrumes.   </span></p>
+<p><b><i><span>OGM </span></i></b></p>
+<p><span>Règlement CE 1829/2003 et 1830/2003 </span></p>
+<p><i><span>Ingrédients étiquetables OGM : aucun </span></i></p>
+<p><b><i><span>Allergènes </span></i></b></p>
+<p><span>Règlement UE 1169/2011 </span></p>
+<p><i><span>Substances allergènes déclarables : aucune </span></i></p>
+<p><i><span>Contaminations croisées possibles </span></i><i><span>: œufs, soja, lait, fruits à coques</span></i><i><span> </span></i></p>
+<p><b><i><span>Ionisation </span></i></b></p>
+<p><span>Décision CE 2/99. </span><i><span>Non traité par ionisation.</span></i><span> </span></p>
+<p><b><i><span>Spécifications </span></i></b></p>
+<p><b><i><span>physico-chimiques </span></i></b></p>
+<p><span>Brix :  69,5 - 73,5 % </span></p>
+<p><span>pH : 2,30 - 2,60 </span></p>
+<p><span>Aw : 0.76-0.80 </span></p>
+<p><b><i><span>Caractéristiques </span></i></b></p>
+<p><b><i><span>organoleptiques </span></i></b></p>
+<p><span>Couleur : jaune </span></p>
+<p><span>Goût : citron </span></p>
+<p><span>Texture : liquide épais visqueux.  </span></p>
+<p><b><i><span>Spécifications </span></i></b></p>
+<p><b><i><span>bactériologiques </span></i></b></p>
+<p><b><i><span>(ufc/g) </span></i></b></p>
+<p><span>Flore totale &lt;5 000 </span></p>
+<p><span>Levures &lt;500 </span></p>
+<p><span>Moisissures &lt;300 </span></p>
+<p><span>Salmonelles : abs /25g </span></p>
+<p><span>Coliformes &lt;10 </span></p>
+<p><span>E.coli &lt;10 </span></p>
+<p><b><i><span>Valeurs </span></i></b></p>
+<p><b><i><span>nutritionnelles (en </span></i></b></p>
+<p><b><i><span>g/100g) </span></i></b></p>
+<p><span>Matière grasse 1,3 g </span></p>
+<p><span>AG saturés 1,3 g  </span></p>
+<p><span>Glucides 70,5 g </span></p>
+<p><span>Dont sucres 53,5 g </span><sup><span>Protéines 0.3 g </span></sup></p>
+<p><span>Energie pour 100g : </span></p>
+<p><span>Soit : 1.331,5 kJ </span></p>
+<p><span>313,5 Kcal </span></p>
+<p><span>Humidité 25,5 g </span></p>
+<p><span>Sel 0,068 g </span></p>
+<p><span>Sodium 0,027 g </span></p>
+<p><span>Fibres 1.2 g </span></p>
+<p><b><i><span>Conditionnement </span></i></b></p>
+<p><span>Direct   </span></p>
+<p><span> </span></p>
+<p><span>: pot 1kg </span></p>
+<p><span>Surconditionnement </span></p>
+<p><span>: carton de 5x1 kg </span></p>
+<p><span>Palettes EUR </span></p>
+<p><span> : 560 kg </span></p>
+<p><b><i><span>Stockage </span></i></b></p>
+<p><span>Frais et sec (5-25°C </span><span>–</span><span> HR=65% maxi) </span></p>
+<p><span>Conditions de stockage après ouverture : dans son emballage correctement fermé après chaque </span></p>
+<p><span>utilisation.  </span></p>
+<p><b><i><span>Informations </span></i></b></p>
+<p><b><i><span>complémentaires </span></i></b></p>
+<p><i><span>1 correspond à la définition du pays d'origine établie dans le Règlement (UE) No 1169/2011 concernant l'information des </span></i></p>
+<p><i><span>consommateurs sur les denrées alimentaires et se réfère à l'origine d'une denrée alimentaire telle que déterminée conformément au </span></i></p>
+<p><i><span>règlemen</span></i><i><span>t du Code des Douanes de l’Union (Article 60 du Règl</span></i><i><span>ement (EU) No 952/2013). Si des informations supplémentaires sont </span></i></p>
+<p><i><span>requises sur l'origine de l'un des ingrédients du produit, veuillez consulter votre interlocuteur Puratos.</span></i><span> </span></p>
+<p><i><span>Les informations données sur ce document sont basées sur nos connaissances et expériences actuelles, et peuvent être utilisées à votre discrétion et en connaissance </span></i></p>
+<p><i><span>des risques associés. Tous les produits sont fournis en conformité avec nos conditions générales et conditions de vente. Nous ne pouvons accepter aucune </span></i></p>
+<p><i><span>responsabilité pour les effets de toutes combinaisons ou mélanges de produits qui ne sont pas conformes à nos recommandations. En utilisant le produit, nos clients </span></i></p>
+<p><i><span>sont priés de se conformer à toutes les exigences légales pertinentes, administratives et réglementaires ainsi qu'aux procédures relatives à son utilisation et la </span></i></p>
+<p><i><span>protection de </span></i><i><span>l’environnement.</span></i><i><span> </span></i></p>
+</div>
+},
+{'role': 'assistant', 'content': {
+  "name": "Classic Citron (Lemon)",
+  "description": "<p>Préparation de fruits.  Préparé avec 98 g de citron pour 100 g. Préparé sans colorants ni arômes artificiels.</p>",
+  "description_purchase": "",
+  "description_sale": "",
+  "list_price": 0.0,
+  "volume": 0.0,
+  "weight": 0.0,
+  "default_code": false,
+  "x_alimentarite_des_emballages": "",
+  "x_arachides_et_produits_a_base_darachides": {
+    "option_value": "Absence"
+  },
+  "x_celeri_et_produits_a_base_de_celeri": {
+    "option_value": "Absence"
+  },
+  "x_conservation": "Frais et sec (5-25°C – HR=65% maxi)",
+  "x_cereales_contenant_du_gluten_et_produits_a_base_de_cereales": {
+    "option_value": "Absence"
+  },
+  "x_fruits_a_coques_et_produits_a_base_de_ces_fruits": {
+    "option_value": "Trace"
+  },
+  "x_certification": "",
+  "x_code_article": "4017059",
+  "x_code_douanier": "",
+  "x_contaminants": "",
+  "x_crustaces_et_produits_a_base_de_crustaces": {
+    "option_value": "Absence"
+  },
+  "x_garantie_sans_ionisation": "Décision CE 2/99. Non traité par ionisation.",
+  "x_garantie_sans_ogm": "Règlement CE 1829/2003 et 1830/2003\nIngrédients étiquetables OGM : aucun",
+  "x_garantie_sans_nanotechnologie_et_nanomateriaux": "",
+  "x_graines_de_sesame_et_produits_a_base_de_graines_de_sesame": {
+    "option_value": "Absence"
+  },
+  "x_lait_produits_laitiers_et_derives": {
+    "option_value": "Trace"
+  },
+  "x_mollusques_et_produits_a_base_de_mollusques": {
+    "option_value": "Absence"
+  },
+  "x_oeufs_et_produits_a_base_doeufs": {
+    "option_value": "Trace"
+  },
+  "x_autres_regimes": "",
+  "x_poissons_et_produits_a_base_de_poissons": {
+    "option_value": "Absence"
+  },
+  "x_sulfites": {
+    "option_value": "Absence"
+  },
+  "x_matieres_grasses": "1,3 g",
+  "x_compatible_a_lalimentation_casher": {
+    "option_value": "Pas de donnée"
+  },
+  "x_conditionnement": "Direct : pot 1kg\nSurconditionnement : carton de 5x1 kg\nPalettes EUR : 560 kg",
+  "x_dont_sucres": "53,5 g",
+  "x_proteines": "0.3 g",
+  "x_ingredients": "Sirop de glucose, sucre, concentré de citron, eau, arôme naturel de citron, fibre d’agrumes.",
+  "x_lupin_et_produits_a_base_de_lupin": {
+    "option_value": "Absence"
+  },
+  "x_caracteristiques_physicochimiques": "Brix :  69,5 - 73,5 %\npH : 2,30 - 2,60 \nAw : 0.76-0.80",
+  "x_moutarde_et_produits_a_base_de_moutarde": {
+    "option_value": "Absence"
+  },
+  "x_origine": "Belgique",
+  "x_compatible_a_lalimentation_halal": {
+    "option_value": "Pas de donnée"
+  },
+  "x_soja_et_produits_a_base_de_soja": {
+    "option_value": "Trace"
+  },
+  "x_energie": "Energie pour 100g :\nSoit : 1.331,5 kJ\n313,5 Kcal",
+  "x_utilisation": "Dosage recommandé : 30 g à 100g par kg de votre préparation\nPour les denrées alimentaires appartenant à la catégorie 05.4 Décorations, enrobages et fourrages\ntels que définis par les directives de la Commission européenne - partie E de l'annexe II du\nrèglement (CE) n°1333/2008 sur les additifs alimentaires - version 5 – juin 2017. Contactez Puratos avant tout ajout direct d'additif alimentaire à la recette.\nApplication / recette : Traditionnellement utilisés en bavarois, mousses et glaces, les classics sont\nparfaits pour apporter saveur et couleur à toutes sortes de préparation comme les : crème\nanglaise, pâte à gâteau, ganache, crème au beurre, garniture pralinée, aussi en glaçage ou Miroir.",
+  "x_compatible_au_regime_vegan": {
+    "option_value": "Pas de donnée"
+  },
+  "x_poids_brut": "",
+  "x_poids_net_egoutte": "",
+  "x_sel": "0,068 g",
+  "x_compatible_au_regime_vegetarien": {
+    "option_value": "Pas de donnée"
+  },
+  "x_caracteristiques_microbiologiques": "Flore totale : <5 000\nLevures : <500\nMoisissures : <300\nSalmonelles : abs /25g\nColiformes : <10\nE.coli : <10",
+  "x_caracteristiques_organoleptiques": "Couleur : jaune\nGoût : citron\nTexture : liquide épais visqueux.",
+  "x_dont_acides_gras_satures": "1,3 g",
+  "x_fibres": "1.2 g",
+  "x_glucides": "70,5 g",
+  "x_poids_net": ""
+}}]}
