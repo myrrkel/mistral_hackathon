@@ -1,10 +1,9 @@
 # Mistral AI Fine-Tuning Hackathon
 
-Mistral AI Fine-Tuning in Odoo
+The work done for this hackathon has been adding Fine-Tuning features in this to repositories:
+ - [AI Connector](https://github.com/myrrkel/odoo-ai)
+ - [File2Record](https://github.com/myrrkel/odoo-file2record)
 
-This project is based on Odoo [AI Connector](https://github.com/myrrkel/odoo-ai) and [File2Record](https://github.com/myrrkel/odoo-file2record)
-
-Most of the work done for the hackathon has been adding Fine-Tuning features in AI Connector.
 
 Presentation video : [Hackathon Mistral AI : Fine-Tuning in Odoo](https://www.youtube.com/watch?v=yidH_Sfk8Jk)
 
