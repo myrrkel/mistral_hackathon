@@ -1,0 +1,44 @@
+
+Groupe D'Attributs:
+    load: True
+    model: attribute.group
+    datas:
+        Fiche technique:
+            model: attribute.group
+            force_id: __export__.attribute_group_1
+            values:
+                name: "Technical sheet"
+                model_id/id: product.model_product_template
+                sequence: 0
+
+        Allergènes:
+            model: attribute.group
+            force_id: __export__.attribute_group_2
+            values:
+                name: "Allergens"
+                model_id/id: product.model_product_template
+                sequence: 2
+
+        Valeurs nutritionnelles moyennes:
+            model: attribute.group
+            force_id: __export__.attribute_group_4
+            values:
+                name: "Average nutritional values (/100g)"
+                model_id/id: product.model_product_template
+                sequence: 1
+
+        Caractéristiques:
+            model: attribute.group
+            force_id: __export__.attribute_group_5
+            values:
+                name: "Characteristics"
+                model_id/id: product.model_product_template
+                sequence: 5
+
+        Régime alimentaire:
+            model: attribute.group
+            force_id: __export__.attribute_group_3
+            values:
+                name: "Diet"
+                model_id/id: product.model_product_template
+                sequence: 4

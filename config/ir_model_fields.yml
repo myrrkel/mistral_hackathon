@@ -1,0 +1,730 @@
+
+FIELDS:
+    load: True
+    model: ir.model.fields
+    datas:
+        x_food_compatibility_of_packaging:
+            model: ir.model.fields
+            force_id: __export__.ir_model_fields_12895
+            values:
+                name: "x_food_compatibility_of_packaging"
+                model_id/id: product.model_product_template
+                copied: True
+                domain: "[]"
+                field_description: "Food compatibility of packaging"
+                model: "product.template"
+                selectable: True
+                state: "manual"
+                store: True
+                ttype: "text"
+
+        x_peanuts:
+            model: ir.model.fields
+            force_id: __export__.ir_model_fields_12926
+            values:
+                name: "x_peanuts"
+                model_id/id: product.model_product_template
+                copied: True
+                domain: "[]"
+                field_description: "Peanuts and peanut-based products"
+                model: "product.template"
+                on_delete: "set null"
+                relation: "attribute.option"
+                selectable: True
+                state: "manual"
+                store: True
+                ttype: "many2one"
+
+        x_other_regime:
+            model: ir.model.fields
+            force_id: product.field_product_template__x_other_regime
+            values:
+                name: "x_other_regime"
+                model_id/id: product.model_product_template
+                copied: True
+                domain: "[]"
+                field_description: "Other Diet"
+                model: "product.template"
+                selectable: True
+                state: "manual"
+                store: True
+                ttype: "char"
+
+        x_microbiological_characteristics:
+            model: ir.model.fields
+            force_id: __export__.ir_model_fields_13229
+            values:
+                name: "x_microbiological_characteristics"
+                model_id/id: product.model_product_template
+                copied: True
+                domain: "[]"
+                field_description: "Microbiological characteristics"
+                model: "product.template"
+                selectable: True
+                state: "manual"
+                store: True
+                ttype: "text"
+
+        x_organoleptic_characteristics:
+            model: ir.model.fields
+            force_id: __export__.ir_model_fields_13223
+            values:
+                name: "x_organoleptic_characteristics"
+                model_id/id: product.model_product_template
+                copied: True
+                domain: "[]"
+                field_description: "Organoleptic characteristics"
+                model: "product.template"
+                selectable: True
+                state: "manual"
+                store: True
+                ttype: "text"
+
+        x_physicochemical_characteristics:
+            model: ir.model.fields
+            force_id: __export__.ir_model_fields_13232
+            values:
+                name: "x_physicochemical_characteristics"
+                model_id/id: product.model_product_template
+                copied: True
+                domain: "[]"
+                field_description: "Physico-chemical characteristics"
+                model: "product.template"
+                selectable: True
+                state: "manual"
+                store: True
+                ttype: "text"
+
+        x_celery:
+            model: ir.model.fields
+            force_id: __export__.ir_model_fields_12938
+            values:
+                name: "x_celery_and_celery_based_products"
+                model_id/id: product.model_product_template
+                copied: True
+                domain: "[]"
+                field_description: "Celery and celery-based products"
+                model: "product.template"
+                on_delete: "set null"
+                relation: "attribute.option"
+                selectable: True
+                state: "manual"
+                store: True
+                ttype: "many2one"
+
+        x_cereals:
+            model: ir.model.fields
+            force_id: __export__.ir_model_fields_12907
+            values:
+                name: "x_cereals"
+                model_id/id: product.model_product_template
+                copied: True
+                domain: "[]"
+                field_description: "Cereals containing gluten and cereal-based products"
+                model: "product.template"
+                on_delete: "set null"
+                relation: "attribute.option"
+                selectable: True
+                state: "manual"
+                store: True
+                ttype: "many2one"
+
+        x_certification:
+            model: ir.model.fields
+            force_id: __export__.ir_model_fields_12874
+            values:
+                name: "x_certification"
+                model_id/id: product.model_product_template
+                copied: True
+                domain: "[]"
+                field_description: "Certification"
+                model: "product.template"
+                selectable: True
+                state: "manual"
+                store: True
+                ttype: "text"
+
+        x_product_code:
+            model: ir.model.fields
+            force_id: __export__.ir_model_fields_12868
+            values:
+                name: "x_product_code"
+                model_id/id: product.model_product_template
+                copied: True
+                domain: "[]"
+                field_description: "Product Code"
+                model: "product.template"
+                selectable: True
+                state: "manual"
+                store: True
+                ttype: "char"
+
+        x_customs_code:
+            model: ir.model.fields
+            force_id: __export__.ir_model_fields_12871
+            values:
+                name: "x_customs_code"
+                model_id/id: product.model_product_template
+                copied: True
+                domain: "[]"
+                field_description: "Customs code"
+                model: "product.template"
+                selectable: True
+                state: "manual"
+                store: True
+                ttype: "char"
+
+        x_kosher_compatible:
+            model: ir.model.fields
+            force_id: __export__.ir_model_fields_13893
+            values:
+                name: "x_kosher_compatible"
+                model_id/id: product.model_product_template
+                copied: True
+                domain: "[]"
+                field_description: "Kosher compatible"
+                model: "product.template"
+                on_delete: "set null"
+                relation: "attribute.option"
+                selectable: True
+                state: "manual"
+                store: True
+                ttype: "many2one"
+
+        x_halal_compatible:
+            model: ir.model.fields
+            force_id: __export__.ir_model_fields_13896
+            values:
+                name: "x_halal_compatible"
+                model_id/id: product.model_product_template
+                copied: True
+                domain: "[]"
+                field_description: "Halal compatible"
+                model: "product.template"
+                on_delete: "set null"
+                relation: "attribute.option"
+                selectable: True
+                state: "manual"
+                store: True
+                ttype: "many2one"
+
+        x_vegan_compatible:
+            model: ir.model.fields
+            force_id: __export__.ir_model_fields_13890
+            values:
+                name: "x_vegan_compatible"
+                model_id/id: product.model_product_template
+                copied: True
+                domain: "[]"
+                field_description: "Vegan compatible"
+                model: "product.template"
+                on_delete: "set null"
+                relation: "attribute.option"
+                selectable: True
+                state: "manual"
+                store: True
+                ttype: "many2one"
+
+        x_vegetarian_compatible:
+            model: ir.model.fields
+            force_id: __export__.ir_model_fields_13887
+            values:
+                name: "x_vegetarian_compatible"
+                model_id/id: product.model_product_template
+                copied: True
+                domain: "[]"
+                field_description: "Vegetarian compatible"
+                model: "product.template"
+                on_delete: "set null"
+                relation: "attribute.option"
+                selectable: True
+                state: "manual"
+                store: True
+                ttype: "many2one"
+
+        x_packaging:
+            model: ir.model.fields
+            force_id: product.field_product_template__x_conditionnement
+            values:
+                name: "x_packaging"
+                model_id/id: product.model_product_template
+                copied: True
+                domain: "[]"
+                field_description: "Packaging"
+                model: "product.template"
+                selectable: True
+                state: "manual"
+                store: True
+                ttype: "char"
+
+        x_storage:
+            model: ir.model.fields
+            force_id: __export__.ir_model_fields_12886
+            values:
+                name: "x_storage"
+                model_id/id: product.model_product_template
+                copied: True
+                domain: "[]"
+                field_description: "Storage"
+                model: "product.template"
+                selectable: True
+                state: "manual"
+                store: True
+                ttype: "text"
+
+        x_contaminants:
+            model: ir.model.fields
+            force_id: __export__.ir_model_fields_12901
+            values:
+                name: "x_contaminants"
+                model_id/id: product.model_product_template
+                copied: True
+                domain: "[]"
+                field_description: "Contaminants"
+                model: "product.template"
+                selectable: True
+                state: "manual"
+                store: True
+                ttype: "text"
+
+        x_crustaceans:
+            model: ir.model.fields
+            force_id: __export__.ir_model_fields_12919
+            values:
+                name: "x_crustaceans"
+                model_id/id: product.model_product_template
+                copied: True
+                domain: "[]"
+                field_description: "Crustaceans and crustacean-based products"
+                model: "product.template"
+                on_delete: "set null"
+                relation: "attribute.option"
+                selectable: True
+                state: "manual"
+                store: True
+                ttype: "many2one"
+
+        x_of_which_saturated_fatty_acids:
+            model: ir.model.fields
+            force_id: __export__.ir_model_fields_13201
+            values:
+                name: "x_of_which_saturated_fatty_acids"
+                model_id/id: product.model_product_template
+                copied: True
+                domain: "[]"
+                field_description: "of which saturated fatty acids"
+                model: "product.template"
+                selectable: True
+                state: "manual"
+                store: True
+                ttype: "char"
+
+        x_of_which_sugars:
+            model: ir.model.fields
+            force_id: __export__.ir_model_fields_13209
+            values:
+                name: "x_of_which_sugars"
+                model_id/id: product.model_product_template
+                copied: True
+                domain: "[]"
+                field_description: "of which sugars"
+                model: "product.template"
+                selectable: True
+                state: "manual"
+                store: True
+                ttype: "char"
+
+        x_energy:
+            model: ir.model.fields
+            force_id: __export__.ir_model_fields_13195
+            values:
+                name: "x_energy"
+                model_id/id: product.model_product_template
+                copied: True
+                domain: "[]"
+                field_description: "Energy"
+                model: "product.template"
+                selectable: True
+                state: "manual"
+                store: True
+                ttype: "char"
+
+        x_fibers:
+            model: ir.model.fields
+            force_id: __export__.ir_model_fields_13212
+            values:
+                name: "x_fibers"
+                model_id/id: product.model_product_template
+                copied: True
+                domain: "[]"
+                field_description: "Fibers"
+                model: "product.template"
+                selectable: True
+                state: "manual"
+                store: True
+                ttype: "char"
+
+        x_tree_nuts:
+            model: ir.model.fields
+            force_id: __export__.ir_model_fields_12935
+            values:
+                name: "x_tree_nuts"
+                model_id/id: product.model_product_template
+                copied: True
+                domain: "[]"
+                field_description: "Tree nuts and tree nut-based products"
+                model: "product.template"
+                on_delete: "set null"
+                relation: "attribute.option"
+                selectable: True
+                state: "manual"
+                store: True
+                ttype: "many2one"
+
+        x_guaranteed_no_ionization:
+            model: ir.model.fields
+            force_id: __export__.ir_model_fields_12892
+            values:
+                name: "x_guaranteed_no_ionization"
+                model_id/id: product.model_product_template
+                copied: True
+                domain: "[]"
+                field_description: "Guaranteed no ionization"
+                model: "product.template"
+                selectable: True
+                state: "manual"
+                store: True
+                ttype: "char"
+
+        x_guaranteed_no_nanotechnology_and_nanomaterials:
+            model: ir.model.fields
+            force_id: __export__.ir_model_fields_12898
+            values:
+                name: "x_guaranteed_no_nanotechnology_and_nanomaterials"
+                model_id/id: product.model_product_template
+                copied: True
+                domain: "[]"
+                field_description: "Guaranteed no nanotechnology and nanomaterials"
+                model: "product.template"
+                selectable: True
+                state: "manual"
+                store: True
+                ttype: "char"
+
+        x_garanteed_gmo_free:
+            model: ir.model.fields
+            force_id: __export__.ir_model_fields_12889
+            values:
+                name: "x_garanteed_gmo_free"
+                model_id/id: product.model_product_template
+                copied: True
+                domain: "[]"
+                field_description: "Guaranteed GMO-free"
+                model: "product.template"
+                selectable: True
+                state: "manual"
+                store: True
+                ttype: "char"
+
+        x_carbohydrates:
+            model: ir.model.fields
+            force_id: __export__.ir_model_fields_13204
+            values:
+                name: "x_carbohydrates"
+                model_id/id: product.model_product_template
+                copied: True
+                domain: "[]"
+                field_description: "Carbohydrates"
+                model: "product.template"
+                selectable: True
+                state: "manual"
+                store: True
+                ttype: "char"
+
+        x_sesame:
+            model: ir.model.fields
+            force_id: __export__.ir_model_fields_12944
+            values:
+                name: "x_sesame"
+                model_id/id: product.model_product_template
+                copied: True
+                domain: "[]"
+                field_description: "Sesame seeds and sesame seed-based products"
+                model: "product.template"
+                on_delete: "set null"
+                relation: "attribute.option"
+                selectable: True
+                state: "manual"
+                store: True
+                ttype: "many2one"
+
+        x_ingredients:
+            model: ir.model.fields
+            force_id: __export__.ir_model_fields_12877
+            values:
+                name: "x_ingredients"
+                model_id/id: product.model_product_template
+                copied: True
+                domain: "[]"
+                field_description: "Ingredients"
+                model: "product.template"
+                selectable: True
+                state: "manual"
+                store: True
+                ttype: "text"
+
+        x_milk:
+            model: ir.model.fields
+            force_id: __export__.ir_model_fields_12932
+            values:
+                name: "x_milk"
+                model_id/id: product.model_product_template
+                copied: True
+                domain: "[]"
+                field_description: "Milk, dairy products, and derivatives (including lactose and milk proteins)"
+                model: "product.template"
+                on_delete: "set null"
+                relation: "attribute.option"
+                selectable: True
+                state: "manual"
+                store: True
+                ttype: "many2one"
+
+        x_lupin:
+            model: ir.model.fields
+            force_id: __export__.ir_model_fields_12950
+            values:
+                name: "x_lupin"
+                model_id/id: product.model_product_template
+                copied: True
+                domain: "[]"
+                field_description: "Lupin and lupin-based products"
+                model: "product.template"
+                on_delete: "set null"
+                relation: "attribute.option"
+                selectable: True
+                state: "manual"
+                store: True
+                ttype: "many2one"
+
+        x_fat:
+            model: ir.model.fields
+            force_id: __export__.ir_model_fields_13198
+            values:
+                name: "x_fat"
+                model_id/id: product.model_product_template
+                copied: True
+                domain: "[]"
+                field_description: "Fat"
+                model: "product.template"
+                selectable: True
+                state: "manual"
+                store: True
+                ttype: "char"
+
+        x_mollusk:
+            model: ir.model.fields
+            force_id: __export__.ir_model_fields_12953
+            values:
+                name: "x_mollusk"
+                model_id/id: product.model_product_template
+                copied: True
+                domain: "[]"
+                field_description: "Mollusks and mollusk-based products"
+                model: "product.template"
+                on_delete: "set null"
+                relation: "attribute.option"
+                selectable: True
+                state: "manual"
+                store: True
+                ttype: "many2one"
+
+        x_mustard:
+            model: ir.model.fields
+            force_id: __export__.ir_model_fields_12941
+            values:
+                name: "x_mustard"
+                model_id/id: product.model_product_template
+                copied: True
+                domain: "[]"
+                field_description: "Mustard and mustard-based products"
+                model: "product.template"
+                on_delete: "set null"
+                relation: "attribute.option"
+                selectable: True
+                state: "manual"
+                store: True
+                ttype: "many2one"
+
+        x_egg:
+            model: ir.model.fields
+            force_id: __export__.ir_model_fields_12915
+            values:
+                name: "x_egg"
+                model_id/id: product.model_product_template
+                copied: True
+                domain: "[]"
+                field_description: "Eggs and egg-based products"
+                model: "product.template"
+                on_delete: "set null"
+                relation: "attribute.option"
+                selectable: True
+                state: "manual"
+                store: True
+                ttype: "many2one"
+
+        x_origin:
+            model: ir.model.fields
+            force_id: __export__.ir_model_fields_12880
+            values:
+                name: "x_origin"
+                model_id/id: product.model_product_template
+                copied: True
+                domain: "[]"
+                field_description: "Origin"
+                model: "product.template"
+                selectable: True
+                state: "manual"
+                store: True
+                ttype: "text"
+
+        x_gross_weight:
+            model: ir.model.fields
+            force_id: __export__.ir_model_fields_13909
+            values:
+                name: "x_gross_weight"
+                model_id/id: product.model_product_template
+                copied: True
+                domain: "[]"
+                field_description: "Gross weight"
+                model: "product.template"
+                selectable: True
+                state: "manual"
+                store: True
+                ttype: "char"
+
+        x_net_weight:
+            model: ir.model.fields
+            force_id: __export__.ir_model_fields_13903
+            values:
+                name: "x_net_weight"
+                model_id/id: product.model_product_template
+                copied: True
+                domain: "[]"
+                field_description: "Net weight"
+                model: "product.template"
+                selectable: True
+                state: "manual"
+                store: True
+                ttype: "char"
+
+        x_drained_net_weight:
+            model: ir.model.fields
+            force_id: __export__.ir_model_fields_13906
+            values:
+                name: "x_drained_net_weight"
+                model_id/id: product.model_product_template
+                copied: True
+                domain: "[]"
+                field_description: "Drained net weight"
+                model: "product.template"
+                selectable: True
+                state: "manual"
+                store: True
+                ttype: "char"
+
+        x_fish:
+            model: ir.model.fields
+            force_id: __export__.ir_model_fields_12923
+            values:
+                name: "x_fish"
+                model_id/id: product.model_product_template
+                copied: True
+                domain: "[]"
+                field_description: "Fish and fish-based products"
+                model: "product.template"
+                on_delete: "set null"
+                relation: "attribute.option"
+                selectable: True
+                state: "manual"
+                store: True
+                ttype: "many2one"
+
+        x_protein:
+            model: ir.model.fields
+            force_id: __export__.ir_model_fields_13217
+            values:
+                name: "x_protein"
+                model_id/id: product.model_product_template
+                copied: True
+                domain: "[]"
+                field_description: "Protein"
+                model: "product.template"
+                selectable: True
+                state: "manual"
+                store: True
+                ttype: "char"
+
+        x_salt:
+            model: ir.model.fields
+            force_id: __export__.ir_model_fields_13220
+            values:
+                name: "x_salt"
+                model_id/id: product.model_product_template
+                copied: True
+                domain: "[]"
+                field_description: "Salt"
+                model: "product.template"
+                selectable: True
+                state: "manual"
+                store: True
+                ttype: "char"
+
+        x_soy:
+            model: ir.model.fields
+            force_id: __export__.ir_model_fields_12929
+            values:
+                name: "x_soy"
+                model_id/id: product.model_product_template
+                copied: True
+                domain: "[]"
+                field_description: "Soy and soy-based products"
+                model: "product.template"
+                on_delete: "set null"
+                relation: "attribute.option"
+                selectable: True
+                state: "manual"
+                store: True
+                ttype: "many2one"
+
+        x_sulfites:
+            model: ir.model.fields
+            force_id: __export__.ir_model_fields_12947
+            values:
+                name: "x_sulfites"
+                model_id/id: product.model_product_template
+                copied: True
+                domain: "[]"
+                field_description: "Sulfites in concentrations of more than 10 mg/kg or 10 mg/l expressed as SO2"
+                model: "product.template"
+                on_delete: "set null"
+                relation: "attribute.option"
+                selectable: True
+                state: "manual"
+                store: True
+                ttype: "many2one"
+
+        x_usage:
+            model: ir.model.fields
+            force_id: __export__.ir_model_fields_12883
+            values:
+                name: "x_usage"
+                model_id/id: product.model_product_template
+                copied: True
+                domain: "[]"
+                field_description: "Usage"
+                model: "product.template"
+                selectable: True
+                state: "manual"
+                store: True
+                ttype: "text"

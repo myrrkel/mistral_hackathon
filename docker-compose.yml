@@ -1,0 +1,27 @@
+services:
+  web:
+    image: odoo_ai:16.0
+    build: ./
+
+    ports:
+      - "8069:8069"
+    expose:
+      - 8069
+    command: odoo -d odoo_16_ai
+    volumes:
+      - ./odoo.conf:/etc/odoo/odoo.conf
+      - odoo_data16:/var/lib/odoo
+      - ./addons/odoo-pim:/opt/extra_addons/odoo-pim
+      - ./addons/odoo-ai:/opt/extra_addons/odoo-ai
+      - ./addons/odoo-file2record:/opt/extra_addons/odoo-file2record
+    labels:
+      - "traefik.enable=true"
+
+volumes:
+  odoo_data16:
+  postgresql_data:
+networks:
+  default:
+    name: specific_network
+    external: true
+    

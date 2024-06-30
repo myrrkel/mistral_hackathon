@@ -1,0 +1,462 @@
+
+Fiche technique - Attribut:
+    load: True
+    model: attribute.attribute
+    datas:
+        x_code_article X_Code_Article:
+            model: attribute.attribute
+            force_id: __export__.attribute_attribute_01
+            values:
+                attribute_group_id/id: __export__.attribute_group_1
+                field_id/id: __export__.ir_model_fields_12868
+                attribute_type: "char"
+                nature: "custom"
+                sequence: 0
+
+        x_poids_net X_Poids_Net:
+            model: attribute.attribute
+            force_id: __export__.attribute_attribute_93
+            values:
+                attribute_group_id/id: __export__.attribute_group_1
+                field_id/id: __export__.ir_model_fields_13903
+                attribute_type: "char"
+                nature: "custom"
+                sequence: 1
+
+        x_poids_net_egoutte X_Poids_Net_Egoutte:
+            model: attribute.attribute
+            force_id: __export__.attribute_attribute_94
+            values:
+                attribute_group_id/id: __export__.attribute_group_1
+                field_id/id: __export__.ir_model_fields_13906
+                attribute_type: "char"
+                nature: "custom"
+                sequence: 2
+
+        x_poids_brut X_Poids_Brut:
+            model: attribute.attribute
+            force_id: __export__.attribute_attribute_95
+            values:
+                attribute_group_id/id: __export__.attribute_group_1
+                field_id/id: __export__.ir_model_fields_13909
+                attribute_type: "char"
+                nature: "custom"
+                sequence: 3
+
+        x_code_douanier X_Code_Douanier:
+            model: attribute.attribute
+            force_id: __export__.attribute_attribute_02
+            values:
+                attribute_group_id/id: __export__.attribute_group_1
+                field_id/id: __export__.ir_model_fields_12871
+                attribute_type: "char"
+                nature: "custom"
+                sequence: 4
+
+        x_ingredients X_Ingredients:
+            model: attribute.attribute
+            force_id: __export__.attribute_attribute_04
+            values:
+                attribute_group_id/id: __export__.attribute_group_1
+                field_id/id: __export__.ir_model_fields_12877
+                attribute_type: "text"
+                nature: "custom"
+                sequence: 5
+
+        x_origine X_Origine:
+            model: attribute.attribute
+            force_id: __export__.attribute_attribute_05
+            values:
+                attribute_group_id/id: __export__.attribute_group_1
+                field_id/id: __export__.ir_model_fields_12880
+                attribute_type: "text"
+                nature: "custom"
+                sequence: 6
+
+        x_utilisation X_Utilisation:
+            model: attribute.attribute
+            force_id: __export__.attribute_attribute_06
+            values:
+                attribute_group_id/id: __export__.attribute_group_1
+                field_id/id: __export__.ir_model_fields_12883
+                attribute_type: "text"
+                nature: "custom"
+                sequence: 7
+
+        x_conservation X_Conservation:
+            model: attribute.attribute
+            force_id: __export__.attribute_attribute_07
+            values:
+                attribute_group_id/id: __export__.attribute_group_1
+                field_id/id: __export__.ir_model_fields_12886
+                attribute_type: "text"
+                nature: "custom"
+                sequence: 8
+
+        x_garantie_sans_ogm X_Garantie_Sans_Ogm:
+            model: attribute.attribute
+            force_id: __export__.attribute_attribute_08
+            values:
+                attribute_group_id/id: __export__.attribute_group_1
+                field_id/id: __export__.ir_model_fields_12889
+                attribute_type: "char"
+                nature: "custom"
+                sequence: 9
+
+        x_garantie_sans_nanotechnologie_et_nanomateriaux X_Garantie_Sans_Nanotechnologie_Et_Nanomateriaux:
+            model: attribute.attribute
+            force_id: __export__.attribute_attribute_11
+            values:
+                attribute_group_id/id: __export__.attribute_group_1
+                field_id/id: __export__.ir_model_fields_12898
+                attribute_type: "char"
+                nature: "custom"
+                sequence: 10
+
+        x_garantie_sans_ionisation X_Garantie_Sans_Ionisation:
+            model: attribute.attribute
+            force_id: __export__.attribute_attribute_09
+            values:
+                attribute_group_id/id: __export__.attribute_group_1
+                field_id/id: __export__.ir_model_fields_12892
+                attribute_type: "char"
+                nature: "custom"
+                sequence: 11
+
+        x_certification X_Certification:
+            model: attribute.attribute
+            force_id: __export__.attribute_attribute_03
+            values:
+                attribute_group_id/id: __export__.attribute_group_1
+                field_id/id: __export__.ir_model_fields_12874
+                attribute_type: "text"
+                nature: "custom"
+                sequence: 12
+
+        x_alimentarite_des_emballages X_Alimentarite_Des_Emballages:
+            model: attribute.attribute
+            force_id: __export__.attribute_attribute_10
+            values:
+                attribute_group_id/id: __export__.attribute_group_1
+                field_id/id: __export__.ir_model_fields_12895
+                attribute_type: "text"
+                nature: "custom"
+                sequence: 13
+
+        x_contaminants X_Contaminants:
+            model: attribute.attribute
+            force_id: __export__.attribute_attribute_12
+            values:
+                attribute_group_id/id: __export__.attribute_group_1
+                field_id/id: __export__.ir_model_fields_12901
+                attribute_type: "text"
+                nature: "custom"
+                sequence: 14
+
+Valeurs nutritionnelles moyennes (/100g) - Attribut:
+    load: True
+    model: attribute.attribute
+    datas:
+        x_energie X_Energie:
+            model: attribute.attribute
+            force_id: __export__.attribute_attribute_62
+            values:
+                attribute_group_id/id: __export__.attribute_group_4
+                field_id/id: __export__.ir_model_fields_13195
+                attribute_type: "char"
+                nature: "custom"
+                sequence: 0
+
+        x_matieres_grasses X_Matieres_Grasses:
+            model: attribute.attribute
+            force_id: __export__.attribute_attribute_63
+            values:
+                attribute_group_id/id: __export__.attribute_group_4
+                field_id/id: __export__.ir_model_fields_13198
+                attribute_type: "char"
+                nature: "custom"
+                sequence: 1
+
+        x_dont_acides_gras_satures X_Dont_Acides_Gras_Satures:
+            model: attribute.attribute
+            force_id: __export__.attribute_attribute_64
+            values:
+                attribute_group_id/id: __export__.attribute_group_4
+                field_id/id: __export__.ir_model_fields_13201
+                attribute_type: "char"
+                nature: "custom"
+                sequence: 2
+
+        x_glucides X_Glucides:
+            model: attribute.attribute
+            force_id: __export__.attribute_attribute_65
+            values:
+                attribute_group_id/id: __export__.attribute_group_4
+                field_id/id: __export__.ir_model_fields_13204
+                attribute_type: "char"
+                nature: "custom"
+                sequence: 3
+
+        x_dont_sucres X_Dont_Sucres:
+            model: attribute.attribute
+            force_id: __export__.attribute_attribute_66
+            values:
+                attribute_group_id/id: __export__.attribute_group_4
+                field_id/id: __export__.ir_model_fields_13209
+                attribute_type: "char"
+                nature: "custom"
+                sequence: 4
+
+        x_fibres X_Fibres:
+            model: attribute.attribute
+            force_id: __export__.attribute_attribute_67
+            values:
+                attribute_group_id/id: __export__.attribute_group_4
+                field_id/id: __export__.ir_model_fields_13212
+                attribute_type: "char"
+                nature: "custom"
+                sequence: 5
+
+        x_proteines X_Proteines:
+            model: attribute.attribute
+            force_id: __export__.attribute_attribute_68
+            values:
+                attribute_group_id/id: __export__.attribute_group_4
+                field_id/id: __export__.ir_model_fields_13217
+                attribute_type: "char"
+                nature: "custom"
+                sequence: 6
+
+        x_sel X_Sel:
+            model: attribute.attribute
+            force_id: __export__.attribute_attribute_69
+            values:
+                attribute_group_id/id: __export__.attribute_group_4
+                field_id/id: __export__.ir_model_fields_13220
+                attribute_type: "char"
+                nature: "custom"
+                sequence: 7
+
+Allergènes - Attribut:
+    load: True
+    model: attribute.attribute
+    datas:
+        x_cereales_contenant_du_gluten_et_produits_a_base_de_cereales X_Cereales_Contenant_Du_Gluten_Et_Produits_A_Base_De_Cereales:
+            model: attribute.attribute
+            force_id: __export__.attribute_attribute_14
+            values:
+                attribute_group_id/id: __export__.attribute_group_2
+                field_id/id: __export__.ir_model_fields_12907
+                attribute_type: "select"
+                nature: "custom"
+                sequence: 0
+
+        x_crustaces_et_produits_a_base_de_crustaces X_Crustaces_Et_Produits_A_Base_De_Crustaces:
+            model: attribute.attribute
+            force_id: __export__.attribute_attribute_17
+            values:
+                attribute_group_id/id: __export__.attribute_group_2
+                field_id/id: __export__.ir_model_fields_12919
+                attribute_type: "select"
+                nature: "custom"
+                sequence: 1
+
+        x_oeufs_et_produits_a_base_doeufs X_Oeufs_Et_Produits_A_Base_Doeufs:
+            model: attribute.attribute
+            force_id: __export__.attribute_attribute_16
+            values:
+                attribute_group_id/id: __export__.attribute_group_2
+                field_id/id: __export__.ir_model_fields_12915
+                attribute_type: "select"
+                nature: "custom"
+                sequence: 2
+
+        x_poissons_et_produits_a_base_de_poissons X_Poissons_Et_Produits_A_Base_De_Poissons:
+            model: attribute.attribute
+            force_id: __export__.attribute_attribute_18
+            values:
+                attribute_group_id/id: __export__.attribute_group_2
+                field_id/id: __export__.ir_model_fields_12923
+                attribute_type: "select"
+                nature: "custom"
+                sequence: 3
+
+        x_arachides_et_produits_a_base_darachides X_Arachides_Et_Produits_A_Base_Darachides:
+            model: attribute.attribute
+            force_id: __export__.attribute_attribute_19
+            values:
+                attribute_group_id/id: __export__.attribute_group_2
+                field_id/id: __export__.ir_model_fields_12926
+                attribute_type: "select"
+                nature: "custom"
+                sequence: 4
+
+        x_soja_et_produits_a_base_de_soja X_Soja_Et_Produits_A_Base_De_Soja:
+            model: attribute.attribute
+            force_id: __export__.attribute_attribute_20
+            values:
+                attribute_group_id/id: __export__.attribute_group_2
+                field_id/id: __export__.ir_model_fields_12929
+                attribute_type: "select"
+                nature: "custom"
+                sequence: 5
+
+        x_lait_produits_laitiers_et_derives X_Lait_Produits_Laitiers_Et_Derives:
+            model: attribute.attribute
+            force_id: __export__.attribute_attribute_21
+            values:
+                attribute_group_id/id: __export__.attribute_group_2
+                field_id/id: __export__.ir_model_fields_12932
+                attribute_type: "select"
+                nature: "custom"
+                sequence: 6
+
+        x_fruits_a_coques_et_produits_a_base_de_ces_fruits X_Fruits_A_Coques_Et_Produits_A_Base_De_Ces_Fruits:
+            model: attribute.attribute
+            force_id: __export__.attribute_attribute_22
+            values:
+                attribute_group_id/id: __export__.attribute_group_2
+                field_id/id: __export__.ir_model_fields_12935
+                attribute_type: "select"
+                nature: "custom"
+                sequence: 7
+
+        x_celeri_et_produits_a_base_de_celeri X_Celeri_Et_Produits_A_Base_De_Celeri:
+            model: attribute.attribute
+            force_id: __export__.attribute_attribute_23
+            values:
+                attribute_group_id/id: __export__.attribute_group_2
+                field_id/id: __export__.ir_model_fields_12938
+                attribute_type: "select"
+                nature: "custom"
+                sequence: 8
+
+        x_moutarde_et_produits_a_base_de_moutarde X_Moutarde_Et_Produits_A_Base_De_Moutarde:
+            model: attribute.attribute
+            force_id: __export__.attribute_attribute_24
+            values:
+                attribute_group_id/id: __export__.attribute_group_2
+                field_id/id: __export__.ir_model_fields_12941
+                attribute_type: "select"
+                nature: "custom"
+                sequence: 9
+
+        x_graines_de_sesame_et_produits_a_base_de_graines_de_sesame X_Graines_De_Sesame_Et_Produits_A_Base_De_Graines_De_Sesame:
+            model: attribute.attribute
+            force_id: __export__.attribute_attribute_25
+            values:
+                attribute_group_id/id: __export__.attribute_group_2
+                field_id/id: __export__.ir_model_fields_12944
+                attribute_type: "select"
+                nature: "custom"
+                sequence: 10
+
+        x_sulfites X_Sulfites:
+            model: attribute.attribute
+            force_id: __export__.attribute_attribute_26
+            values:
+                attribute_group_id/id: __export__.attribute_group_2
+                field_id/id: __export__.ir_model_fields_12947
+                attribute_type: "select"
+                nature: "custom"
+                sequence: 11
+
+        x_lupin_et_produits_a_base_de_lupin X_Lupin_Et_Produits_A_Base_De_Lupin:
+            model: attribute.attribute
+            force_id: __export__.attribute_attribute_27
+            values:
+                attribute_group_id/id: __export__.attribute_group_2
+                field_id/id: __export__.ir_model_fields_12950
+                attribute_type: "select"
+                nature: "custom"
+                sequence: 12
+
+        x_mollusques_et_produits_a_base_de_mollusques X_Mollusques_Et_Produits_A_Base_De_Mollusques:
+            model: attribute.attribute
+            force_id: __export__.attribute_attribute_28
+            values:
+                attribute_group_id/id: __export__.attribute_group_2
+                field_id/id: __export__.ir_model_fields_12953
+                attribute_type: "select"
+                nature: "custom"
+                sequence: 13
+
+Régime alimentaire - Attribut:
+    load: True
+    model: attribute.attribute
+    datas:
+        x_compatible_au_regime_vegetarien X_Compatible_Au_Regime_Vegetarien:
+            model: attribute.attribute
+            force_id: __export__.attribute_attribute_88
+            values:
+                attribute_group_id/id: __export__.attribute_group_3
+                field_id/id: __export__.ir_model_fields_13887
+                attribute_type: "select"
+                nature: "custom"
+                sequence: 0
+
+        x_compatible_au_regime_vegan X_Compatible_Au_Regime_Vegan:
+            model: attribute.attribute
+            force_id: __export__.attribute_attribute_89
+            values:
+                attribute_group_id/id: __export__.attribute_group_3
+                field_id/id: __export__.ir_model_fields_13890
+                attribute_type: "select"
+                nature: "custom"
+                sequence: 1
+
+        x_compatible_a_lalimentation_casher X_Compatible_A_Lalimentation_Casher:
+            model: attribute.attribute
+            force_id: __export__.attribute_attribute_90
+            values:
+                attribute_group_id/id: __export__.attribute_group_3
+                field_id/id: __export__.ir_model_fields_13893
+                attribute_type: "select"
+                nature: "custom"
+                sequence: 2
+
+        x_compatible_a_lalimentation_halal X_Compatible_A_Lalimentation_Halal:
+            model: attribute.attribute
+            force_id: __export__.attribute_attribute_91
+            values:
+                attribute_group_id/id: __export__.attribute_group_3
+                field_id/id: __export__.ir_model_fields_13896
+                attribute_type: "select"
+                nature: "custom"
+                sequence: 3
+
+
+
+Caractéristiques - Attribut:
+    load: True
+    model: attribute.attribute
+    datas:
+        x_caracteristiques_organoleptiques X_Caracteristiques_Organoleptiques:
+            model: attribute.attribute
+            force_id: __export__.attribute_attribute_70
+            values:
+                attribute_group_id/id: __export__.attribute_group_5
+                field_id/id: __export__.ir_model_fields_13223
+                attribute_type: "text"
+                nature: "custom"
+                sequence: 0
+
+        x_caracteristiques_physicochimiques X_Caracteristiques_Physicochimiques:
+            model: attribute.attribute
+            force_id: __export__.attribute_attribute_73
+            values:
+                attribute_group_id/id: __export__.attribute_group_5
+                field_id/id: __export__.ir_model_fields_13232
+                attribute_type: "text"
+                nature: "custom"
+                sequence: 1
+
+        x_caracteristiques_microbiologiques X_Caracteristiques_Microbiologiques:
+            model: attribute.attribute
+            force_id: __export__.attribute_attribute_72
+            values:
+                attribute_group_id/id: __export__.attribute_group_5
+                field_id/id: __export__.ir_model_fields_13229
+                attribute_type: "text"
+                nature: "custom"
+                sequence: 2

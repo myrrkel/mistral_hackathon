@@ -1,0 +1,10 @@
+[submodule "addons/odoo-ai"]
+	path = addons/odoo-ai
+	url = git@github.com:myrrkel/odoo-ai.git
+[submodule "addons/odoo-file2record"]
+	path = addons/odoo-file2record
+	url = git@github.com:myrrkel/odoo-file2record.git
+[submodule "addons/odoo-pim"]
+	path = addons/odoo-pim
+	url = git@github.com:myrrkel/odoo-pim.git
+	branch = 16.0-mig-pim

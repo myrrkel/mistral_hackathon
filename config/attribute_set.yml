@@ -1,0 +1,11 @@
+
+Ensemble D'Attributs:
+    load: True
+    model: attribute.set
+    datas:
+        Fiche Technique:
+            model: attribute.set
+            force_id: __export__.attribute_set_01
+            values:
+                name: "Technical sheet"
+                model_id/id: product.model_product_template

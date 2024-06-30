@@ -1,0 +1,8 @@
+
+script_files:
+    - config/base.yml
+    - config/ir_model_fields.yml
+    - config/attribute_group.yml
+    - config/attribute_attribute.yml
+    - config/attribute_option.yml
+    - config/attribute_set.yml

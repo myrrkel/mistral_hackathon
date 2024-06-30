@@ -1,0 +1,36 @@
+Hello! In this video, I will show you one of the many ways to use Mistral AI in Odoo and how to get better results with fine-tuning.
+
+This project is mainly based on two Odoo addons I created:
+
+AI Connector, To integrate AI into Odoo, and File2Record to upload any kind of file and create a new record from the extracted data.
+
+A common use case is receiving a product data sheet in PDF format and then manually entering the data into Odoo.
+
+Let's see how, by default and without any customization, we can import it automatically with the Mistral Large model.
+
+Here is a complex product data sheet. We upload it from the product list view.
+
+Now, we have a new product record. Let's check the product properties.
+Mistral did part of the work: some fields are correctly set, but much of the information present in our file is missing.
+
+Previously, the solution was to adapt the prompt until the result was right, but this was quite random.
+
+This is a product manually updated.
+The fields are the perfect transcription of the file. 
+
+By selecting "Add to AI training" a new Question/Answer record is created.
+We can see the prompt we sent and the answer we expected.
+
+These Question/Answers can be used to fine-tune a new model. 
+Select a tag to filter data and click on "Create Fine-Tuning Job"
+Let's see the result of the last fine-tuning job I previously trained.
+The job succeded, we can use this model to import new files.
+
+We only need to set the new model in the "Default record creation" completion.
+
+Let's try again to import our file. Of course, this file has not been used for the training.
+
+Well, it seems to be perfect. All data is here! Mistral AI Fine-tuning works great!
+
+Thank you for watching this video.
+If you need help for AI integration in Odoo, please contact Scalizer.

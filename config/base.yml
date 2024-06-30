@@ -1,0 +1,13 @@
+
+base:
+  modules:
+    - ai_connector_mistralai
+    - file2record_ai
+    - file2record_pim
+
+script_files:
+    - ir_model_fields.yml
+    - attribute_group.yml
+    - attribute_attribute.yml
+    - attribute_option.yml
+    - attribute_set.yml

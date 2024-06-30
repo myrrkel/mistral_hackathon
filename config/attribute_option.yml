@@ -1,0 +1,449 @@
+
+x_cereales_contenant_du_gluten_et_produits_a_base_de_cereales - Option D'Attributs:
+    load: True
+    model: attribute.option
+    datas:
+        Trace:
+            model: attribute.option
+            force_id: __export__.attribute_option_2_14
+            values:
+                name: "Trace"
+                attribute_id/id: __export__.attribute_attribute_14
+
+        Presence:
+            model: attribute.option
+            force_id: __export__.attribute_option_3_14
+            values:
+                name: "Presence"
+                attribute_id/id: __export__.attribute_attribute_14
+
+        Absence:
+            model: attribute.option
+            force_id: __export__.attribute_option_1_14
+            values:
+                name: "Absence"
+                attribute_id/id: __export__.attribute_attribute_14
+
+x_crustaces_et_produits_a_base_de_crustaces - Option D'Attributs:
+    load: True
+    model: attribute.option
+    datas:
+        Trace:
+            model: attribute.option
+            force_id: __export__.attribute_option_2_17
+            values:
+                name: "Trace"
+                attribute_id/id: __export__.attribute_attribute_17
+
+        Absence:
+            model: attribute.option
+            force_id: __export__.attribute_option_1_17
+            values:
+                name: "Absence"
+                attribute_id/id: __export__.attribute_attribute_17
+
+        Presence:
+            model: attribute.option
+            force_id: __export__.attribute_option_3_17
+            values:
+                name: "Presence"
+                attribute_id/id: __export__.attribute_attribute_17
+
+x_oeufs_et_produits_a_base_doeufs - Option D'Attributs:
+    load: True
+    model: attribute.option
+    datas:
+        Trace:
+            model: attribute.option
+            force_id: __export__.attribute_option_2_16
+            values:
+                name: "Trace"
+                attribute_id/id: __export__.attribute_attribute_16
+
+        Presence:
+            model: attribute.option
+            force_id: __export__.attribute_option_3_16
+            values:
+                name: "Presence"
+                attribute_id/id: __export__.attribute_attribute_16
+
+        Absence:
+            model: attribute.option
+            force_id: __export__.attribute_option_1_16
+            values:
+                name: "Absence"
+                attribute_id/id: __export__.attribute_attribute_16
+
+x_poissons_et_produits_a_base_de_poissons - Option D'Attributs:
+    load: True
+    model: attribute.option
+    datas:
+        Presence:
+            model: attribute.option
+            force_id: __export__.attribute_option_3_18
+            values:
+                name: "Presence"
+                attribute_id/id: __export__.attribute_attribute_18
+
+        Trace:
+            model: attribute.option
+            force_id: __export__.attribute_option_2_18
+            values:
+                name: "Trace"
+                attribute_id/id: __export__.attribute_attribute_18
+
+        Absence:
+            model: attribute.option
+            force_id: __export__.attribute_option_1_18
+            values:
+                name: "Absence"
+                attribute_id/id: __export__.attribute_attribute_18
+
+x_arachides_et_produits_a_base_darachides - Option D'Attributs:
+    load: True
+    model: attribute.option
+    datas:
+        Absence:
+            model: attribute.option
+            force_id: __export__.attribute_option_1_19
+            values:
+                name: "Absence"
+                attribute_id/id: __export__.attribute_attribute_19
+
+        Presence:
+            model: attribute.option
+            force_id: __export__.attribute_option_3_19
+            values:
+                name: "Presence"
+                attribute_id/id: __export__.attribute_attribute_19
+
+        Trace:
+            model: attribute.option
+            force_id: __export__.attribute_option_2_19
+            values:
+                name: "Trace"
+                attribute_id/id: __export__.attribute_attribute_19
+
+x_soja_et_produits_a_base_de_soja - Option D'Attributs:
+    load: True
+    model: attribute.option
+    datas:
+        Trace:
+            model: attribute.option
+            force_id: __export__.attribute_option_2_20
+            values:
+                name: "Trace"
+                attribute_id/id: __export__.attribute_attribute_20
+
+        Presence:
+            model: attribute.option
+            force_id: __export__.attribute_option_3_20
+            values:
+                name: "Presence"
+                attribute_id/id: __export__.attribute_attribute_20
+
+        Absence:
+            model: attribute.option
+            force_id: __export__.attribute_option_1_20
+            values:
+                name: "Absence"
+                attribute_id/id: __export__.attribute_attribute_20
+
+x_lait_produits_laitiers_et_derives - Option D'Attributs:
+    load: True
+    model: attribute.option
+    datas:
+        Trace:
+            model: attribute.option
+            force_id: __export__.attribute_option_2_21
+            values:
+                name: "Trace"
+                attribute_id/id: __export__.attribute_attribute_21
+
+        Presence:
+            model: attribute.option
+            force_id: __export__.attribute_option_3_21
+            values:
+                name: "Presence"
+                attribute_id/id: __export__.attribute_attribute_21
+
+        Absence:
+            model: attribute.option
+            force_id: __export__.attribute_option_1_21
+            values:
+                name: "Absence"
+                attribute_id/id: __export__.attribute_attribute_21
+
+x_fruits_a_coques_et_produits_a_base_de_ces_fruits - Option D'Attributs:
+    load: True
+    model: attribute.option
+    datas:
+        Absence:
+            model: attribute.option
+            force_id: __export__.attribute_option_1_22
+            values:
+                name: "Absence"
+                attribute_id/id: __export__.attribute_attribute_22
+
+        Presence:
+            model: attribute.option
+            force_id: __export__.attribute_option_3_22
+            values:
+                name: "Presence"
+                attribute_id/id: __export__.attribute_attribute_22
+
+        Trace:
+            model: attribute.option
+            force_id: __export__.attribute_option_2_22
+            values:
+                name: "Trace"
+                attribute_id/id: __export__.attribute_attribute_22
+
+x_celeri_et_produits_a_base_de_celeri - Option D'Attributs:
+    load: True
+    model: attribute.option
+    datas:
+        Trace:
+            model: attribute.option
+            force_id: __export__.attribute_option_2_23
+            values:
+                name: "Trace"
+                attribute_id/id: __export__.attribute_attribute_23
+
+        Presence:
+            model: attribute.option
+            force_id: __export__.attribute_option_3_23
+            values:
+                name: "Presence"
+                attribute_id/id: __export__.attribute_attribute_23
+
+        Absence:
+            model: attribute.option
+            force_id: __export__.attribute_option_1_23
+            values:
+                name: "Absence"
+                attribute_id/id: __export__.attribute_attribute_23
+
+x_moutarde_et_produits_a_base_de_moutarde - Option D'Attributs:
+    load: True
+    model: attribute.option
+    datas:
+        Absence:
+            model: attribute.option
+            force_id: __export__.attribute_option_1_24
+            values:
+                name: "Absence"
+                attribute_id/id: __export__.attribute_attribute_24
+
+        Trace:
+            model: attribute.option
+            force_id: __export__.attribute_option_2_24
+            values:
+                name: "Trace"
+                attribute_id/id: __export__.attribute_attribute_24
+
+        Presence:
+            model: attribute.option
+            force_id: __export__.attribute_option_3_24
+            values:
+                name: "Presence"
+                attribute_id/id: __export__.attribute_attribute_24
+
+x_graines_de_sesame_et_produits_a_base_de_graines_de_sesame - Option D'Attributs:
+    load: True
+    model: attribute.option
+    datas:
+        Presence:
+            model: attribute.option
+            force_id: __export__.attribute_option_3_25
+            values:
+                name: "Presence"
+                attribute_id/id: __export__.attribute_attribute_25
+
+        Absence:
+            model: attribute.option
+            force_id: __export__.attribute_option_1_25
+            values:
+                name: "Absence"
+                attribute_id/id: __export__.attribute_attribute_25
+
+        Trace:
+            model: attribute.option
+            force_id: __export__.attribute_option_2_25
+            values:
+                name: "Trace"
+                attribute_id/id: __export__.attribute_attribute_25
+
+x_sulfites - Option D'Attributs:
+    load: True
+    model: attribute.option
+    datas:
+        Trace:
+            model: attribute.option
+            force_id: __export__.attribute_option_2_26
+            values:
+                name: "Trace"
+                attribute_id/id: __export__.attribute_attribute_26
+
+        Absence:
+            model: attribute.option
+            force_id: __export__.attribute_option_1_26
+            values:
+                name: "Absence"
+                attribute_id/id: __export__.attribute_attribute_26
+
+        Presence:
+            model: attribute.option
+            force_id: __export__.attribute_option_3_26
+            values:
+                name: "Presence"
+                attribute_id/id: __export__.attribute_attribute_26
+
+x_lupin_et_produits_a_base_de_lupin - Option D'Attributs:
+    load: True
+    model: attribute.option
+    datas:
+        Absence:
+            model: attribute.option
+            force_id: __export__.attribute_option_1_27
+            values:
+                name: "Absence"
+                attribute_id/id: __export__.attribute_attribute_27
+
+        Trace:
+            model: attribute.option
+            force_id: __export__.attribute_option_2_27
+            values:
+                name: "Trace"
+                attribute_id/id: __export__.attribute_attribute_27
+
+        Presence:
+            model: attribute.option
+            force_id: __export__.attribute_option_3_27
+            values:
+                name: "Presence"
+                attribute_id/id: __export__.attribute_attribute_27
+
+x_mollusques_et_produits_a_base_de_mollusques - Option D'Attributs:
+    load: True
+    model: attribute.option
+    datas:
+        Trace:
+            model: attribute.option
+            force_id: __export__.attribute_option_2_28
+            values:
+                name: "Trace"
+                attribute_id/id: __export__.attribute_attribute_28
+
+        Absence:
+            model: attribute.option
+            force_id: __export__.attribute_option_1_28
+            values:
+                name: "Absence"
+                attribute_id/id: __export__.attribute_attribute_28
+
+        Presence:
+            model: attribute.option
+            force_id: __export__.attribute_option_3_28
+            values:
+                name: "Presence"
+                attribute_id/id: __export__.attribute_attribute_28
+
+x_compatible_au_regime_vegetarien - Option D'Attributs:
+    load: True
+    model: attribute.option
+    datas:
+        Yes:
+            model: attribute.option
+            force_id: __export__.attribute_option_48
+            values:
+                name: "Yes"
+                attribute_id/id: __export__.attribute_attribute_88
+
+        No:
+            model: attribute.option
+            force_id: __export__.attribute_option_47_daa0395a
+            values:
+                name: "No"
+                attribute_id/id: __export__.attribute_attribute_88
+
+        Pas De Donnée:
+            model: attribute.option
+            force_id: __export__.attribute_option_46_39db48e4
+            values:
+                name: "No data"
+                attribute_id/id: __export__.attribute_attribute_88
+
+x_compatible_au_regime_vegan - Option D'Attributs:
+    load: True
+    model: attribute.option
+    datas:
+        Yes:
+            model: attribute.option
+            force_id: __export__.attribute_option_48
+            values:
+                name: "Yes"
+                attribute_id/id: __export__.attribute_attribute_89
+
+        No:
+            model: attribute.option
+            force_id: __export__.attribute_option_47
+            values:
+                name: "No"
+                attribute_id/id: __export__.attribute_attribute_89
+
+        Pas De Donnée:
+            model: attribute.option
+            force_id: __export__.attribute_option_46
+            values:
+                name: "No data"
+                attribute_id/id: __export__.attribute_attribute_89
+
+x_compatible_a_lalimentation_casher - Option D'Attributs:
+    load: True
+    model: attribute.option
+    datas:
+        Yes:
+            model: attribute.option
+            force_id: __export__.attribute_option_48
+            values:
+                name: "Yes"
+                attribute_id/id: __export__.attribute_attribute_90
+
+        No:
+            model: attribute.option
+            force_id: __export__.attribute_option_47
+            values:
+                name: "No"
+                attribute_id/id: __export__.attribute_attribute_90
+
+        Pas De Donnée:
+            model: attribute.option
+            force_id: __export__.attribute_option_46
+            values:
+                name: "No data"
+                attribute_id/id: __export__.attribute_attribute_90
+
+x_compatible_a_lalimentation_halal - Option D'Attributs:
+    load: True
+    model: attribute.option
+    datas:
+        Yes:
+            model: attribute.option
+            force_id: __export__.attribute_option_48
+            values:
+                name: "Yes"
+                attribute_id/id: __export__.attribute_attribute_91
+
+        No:
+            model: attribute.option
+            force_id: __export__.attribute_option_47
+            values:
+                name: "No"
+                attribute_id/id: __export__.attribute_attribute_91
+        Pas De Donnée:
+            model: attribute.option
+            force_id: __export__.attribute_option_46
+            values:
+                name: "No data"
+                attribute_id/id: __export__.attribute_attribute_91
