@@ -16,12 +16,13 @@ Mistral did part of the work: some fields are correctly set, but much of the inf
 Previously, the solution was to adapt the prompt until the result was right, but this was quite random.
 
 This is a product manually updated.
-The fields are the perfect transcription of the file. 
+The fields are the perfect transcription of the file.
 
 By selecting "Add to AI training" a new Question/Answer record is created.
 We can see the prompt we sent and the answer we expected.
 
-These Question/Answers can be used to fine-tune a new model. 
+These Question/Answers can be used to fine-tune a new model.
+
 Select a tag to filter data and click on "Create Fine-Tuning Job"
 Let's see the result of the last fine-tuning job I previously trained.
 The job succeded, we can use this model to import new files.
