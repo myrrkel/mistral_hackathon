@@ -3,14 +3,6 @@ name: Config Odoo AI
 
 version: 16.0
 
-#inherits:
-#    - config/base.yml
-#script_files:
-#    - config/ir_model_fields.yml
-#    - config/attribute_group.yml
-#    - config/attribute_attribute.yml
-#    - config/attribute_option.yml
-#    - config/attribute_set.yml
 inherits:
     - base.yml
 
@@ -19,6 +11,5 @@ auth:
     odoo:
         url: http://10.1.0.1:8069
         dbname: odoo_ai_16
-#        dbname: odoo_16_ai
         username: admin
         password: admin
